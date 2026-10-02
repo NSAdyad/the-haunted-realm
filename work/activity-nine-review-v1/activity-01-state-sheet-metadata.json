@@ -1,0 +1,40 @@
+{
+  "asset": "activity-01-state-sheet.png",
+  "source": "C:/Users/DELL/.codex/generated_images/01a0f70b-ce6c-7352-8a7f-dde9d617dc22/exec-ee934202-84ca-4c6e-b112-292f7a16e9c6.png",
+  "generation_method": "built-in image_gen",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "mode": "RGBA",
+  "sha256": "DBDEA2E2E661D76BC9DF5A6845C61249339363E7A4AC9B7E7329F653660FE8D5",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "largest_mid_gap_rows_alpha_lt8": [
+    433,
+    436
+  ],
+  "suggested_split_y": 434,
+  "top_alpha8_bounds": [
+    33,
+    10,
+    1742,
+    433
+  ],
+  "lower_local_alpha8_bounds": [
+    24,
+    2,
+    1752,
+    437
+  ],
+  "central_2percent_gap_alpha_extrema": [
+    0,
+    249
+  ],
+  "border_alpha_max": 1,
+  "visual_qa": "Matching rural path/tree/old stone-trace view; lower traces more visible and distant ember light stronger. Lower also introduces broader warm sky illumination, beyond the requested localized ember change. The sheet is landscape rather than requested square.",
+  "initial_attempt": "Failed: network error: error sending request",
+  "retry_count": 1
+}

@@ -1,0 +1,40 @@
+{
+  "asset": "activity-03-state-sheet.png",
+  "source": "C:/Users/DELL/.codex/generated_images/01a0f70b-ce6c-7352-8a7f-dde9d617dc22/exec-9538c50d-760a-4a33-82c5-611a57948e6c.png",
+  "generation_method": "built-in image_gen",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "sha256": "54B34B33431FD256758A29FF9AE509DF3A0EA4CB3C67DD28F1913BA656C8F025",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "largest_mid_gap_rows_alpha_lt8": [
+    620,
+    660
+  ],
+  "suggested_split_y": 640,
+  "top_alpha8_bounds": [
+    9,
+    114,
+    1242,
+    620
+  ],
+  "lower_local_alpha8_bounds": [
+    9,
+    20,
+    1242,
+    577
+  ],
+  "central_2percent_gap_alpha_extrema": [
+    0,
+    161
+  ],
+  "border_alpha_max": 3,
+  "visual_qa": "Same aged real leather book and work surface; one attached page lifts farther and soft local paper light strengthens. No readable words. Generator added secondary vessels/herbs/crystal around book; these were not requested.",
+  "initial_attempt": "Failed: network error: error sending request",
+  "retry_count": 1
+}

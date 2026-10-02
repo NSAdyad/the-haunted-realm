@@ -1,0 +1,179 @@
+[
+  {
+    "option": 1,
+    "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\title-comparison-v1\\option-1-title.png",
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "sha256": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "alpha_bbox": [
+      0,
+      0,
+      2172,
+      724
+    ],
+    "fully_transparent_pixels": 601047,
+    "partial_alpha_pixels": 970969,
+    "opaque_pixels": 512,
+    "edge_alpha": {
+      "top": {
+        "nonzero": 21,
+        "strong": 0,
+        "max": 8
+      },
+      "bottom": {
+        "nonzero": 15,
+        "strong": 0,
+        "max": 1
+      },
+      "left": {
+        "nonzero": 25,
+        "strong": 0,
+        "max": 6
+      },
+      "right": {
+        "nonzero": 10,
+        "strong": 2,
+        "max": 30
+      }
+    },
+    "alpha_bbox_above_16": [
+      1,
+      3,
+      2172,
+      717
+    ],
+    "alpha_bbox_above_128": [
+      2,
+      4,
+      2171,
+      716
+    ],
+    "max_alpha": 255,
+    "pixels_alpha_240_to_255": 883157,
+    "text_qa": "THE small above HAUNTED REALM large; exact words correct; readable Gothic capitals.",
+    "visual_qa": "Dark oak and bronze/gold frame; one skull, thorn scrolls and cobwebs; no scenery or extra text.",
+    "caveat": "Margin is very tight; faint alpha touches all edges and two pixels above alpha 16 touch right edge."
+  },
+  {
+    "option": 2,
+    "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\title-comparison-v1\\option-2-title.png",
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "sha256": "65E15F7D7A572A94E3AA81A8CC029C4FA4DD6EAA32FFE8670BA2C4229994EFF9",
+    "alpha_bbox": [
+      0,
+      17,
+      2166,
+      724
+    ],
+    "fully_transparent_pixels": 666326,
+    "partial_alpha_pixels": 905875,
+    "opaque_pixels": 327,
+    "edge_alpha": {
+      "top": {
+        "nonzero": 0,
+        "strong": 0,
+        "max": 0
+      },
+      "bottom": {
+        "nonzero": 2,
+        "strong": 0,
+        "max": 1
+      },
+      "left": {
+        "nonzero": 7,
+        "strong": 0,
+        "max": 1
+      },
+      "right": {
+        "nonzero": 0,
+        "strong": 0,
+        "max": 0
+      }
+    },
+    "alpha_bbox_above_16": [
+      13,
+      20,
+      2159,
+      683
+    ],
+    "alpha_bbox_above_128": [
+      14,
+      21,
+      2158,
+      682
+    ],
+    "max_alpha": 255,
+    "pixels_alpha_240_to_255": 873838,
+    "text_qa": "THE HAUNTED REALM on one line; exact words correct; legible silver architectural capitals.",
+    "visual_qa": "Low pointed stone arch with narrow base and carved tracery; no scenery, skulls or extra text.",
+    "caveat": "Margin is tight; faint alpha touches left and bottom edge."
+  },
+  {
+    "option": 3,
+    "path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\title-comparison-v1\\option-3-title.png",
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      2172,
+      724
+    ],
+    "sha256": "233C937B329F56E5998390F2E472D30F47ED86A3E8616E1F7FF3C22974DB82BB",
+    "alpha_bbox": [
+      23,
+      0,
+      2140,
+      724
+    ],
+    "fully_transparent_pixels": 747237,
+    "partial_alpha_pixels": 824685,
+    "opaque_pixels": 606,
+    "edge_alpha": {
+      "top": {
+        "nonzero": 17,
+        "strong": 1,
+        "max": 21
+      },
+      "bottom": {
+        "nonzero": 18,
+        "strong": 0,
+        "max": 7
+      },
+      "left": {
+        "nonzero": 0,
+        "strong": 0,
+        "max": 0
+      },
+      "right": {
+        "nonzero": 0,
+        "strong": 0,
+        "max": 0
+      }
+    },
+    "alpha_bbox_above_16": [
+      56,
+      0,
+      2117,
+      722
+    ],
+    "alpha_bbox_above_128": [
+      56,
+      2,
+      2117,
+      722
+    ],
+    "max_alpha": 255,
+    "pixels_alpha_240_to_255": 755645,
+    "text_qa": "THE HAUNTED upper line; REALM lower line; exact words correct; ivory Victorian capitals.",
+    "visual_qa": "Scalloped dark iron/enamel plaque, crest and small hanging spider; no skull, scenery or extra text.",
+    "caveat": "Top crest is close to edge; one pixel above alpha 16 touches top. Faint alpha also touches bottom."
+  }
+]

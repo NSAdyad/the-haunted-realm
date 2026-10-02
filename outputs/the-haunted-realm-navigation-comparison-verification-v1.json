@@ -1,0 +1,97 @@
+{
+  "kind": "Static navigation comparison PNGs only",
+  "source_hashes_before": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "views": {
+    "a-home": {
+      "file": "the-haunted-realm-navigation-a-home-mockup-v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        8,
+        1520,
+        56
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_entry": "Home",
+      "labels": "Temporary neutral layout labels; no activity names approved",
+      "image_slots": "Empty IMAGE placeholders, no activity illustration generated"
+    },
+    "a-activity": {
+      "file": "the-haunted-realm-navigation-a-activity-mockup-v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        16,
+        296,
+        968
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_entry": "Activity 3",
+      "labels": "Temporary neutral layout labels; no activity names approved",
+      "image_slots": "Empty IMAGE placeholders, no activity illustration generated"
+    },
+    "b-home": {
+      "file": "the-haunted-realm-navigation-b-home-mockup-v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        8,
+        1520,
+        56
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_entry": "Home",
+      "labels": "Temporary neutral layout labels; no activity names approved",
+      "image_slots": "Empty IMAGE placeholders, no activity illustration generated"
+    },
+    "b-activity": {
+      "file": "the-haunted-realm-navigation-b-activity-mockup-v1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        16,
+        296,
+        968
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_entry": "Activity 3",
+      "labels": "Temporary neutral layout labels; no activity names approved",
+      "image_slots": "Empty IMAGE placeholders, no activity illustration generated"
+    }
+  },
+  "source_hashes_after": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "all_protected_files_unchanged": true,
+  "dimensions": {
+    "home_navigation": "1504 x 48 at x=16, y=8",
+    "left_navigation": "280 x 952 at x=16, y=16",
+    "title": "650 x 215 at x=443, y=65, unchanged"
+  }
+}

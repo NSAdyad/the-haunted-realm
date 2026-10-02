@@ -1,0 +1,38 @@
+{
+  "asset": "activity-02-state-sheet.png",
+  "source": "C:/Users/DELL/.codex/generated_images/01a0f70b-ce6c-7352-8a7f-dde9d617dc22/exec-277c3546-3e0f-4d96-8af4-8ce6236bd515.png",
+  "generation_method": "built-in image_gen",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "sha256": "A99BF972725A3B6D1628605ACFAAB21A2F758313428AD1BBF67E0D5FDC3BF388",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "top_alpha8_bounds": [
+    17,
+    66,
+    1234,
+    595
+  ],
+  "lower_local_alpha8_bounds": [
+    15,
+    34,
+    1231,
+    566
+  ],
+  "central_2percent_gap_alpha_extrema": [
+    0,
+    1
+  ],
+  "central_10percent_gap_alpha_extrema": [
+    0,
+    253
+  ],
+  "border_alpha_max": 1,
+  "visual_qa": "Two matching question-paper chamber scenes; lower top paper lifts revealing another numbered blank paper, warmer latch reflection; no invented questions or captions. The lower uncovered paper shows numbers 1 and 3 with one line partly occluded by lifted sheet; no answers.",
+  "retry_count": 0
+}

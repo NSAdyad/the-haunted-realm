@@ -1,0 +1,75 @@
+{
+  "status": "UNAPPROVED ACTIVITY-CARD CONCEPT REVIEW",
+  "scope": "Static images only; no website implementation",
+  "dominant_direction": "Scenes in the Mist",
+  "borrowed_details": "Occasional masonry fragments and faint aged photographic edges; no complete frames or photo borders",
+  "imagery": "Three disposable neutral atmosphere studies, not approved activity content or permanent scenes",
+  "protected_hashes_before": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3",
+    "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1",
+    "the-haunted-realm-navigation-approved-home-overlay.png": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98",
+    "the-haunted-realm-navigation-approved-activity-overlay.png": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561",
+    "the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+  },
+  "views": {
+    "rest": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-activity-cards-mist-rest-review-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "overlay_bounds": [
+        60,
+        341,
+        1476,
+        746
+      ],
+      "changed_pixels_in_title": 0,
+      "changed_pixels_in_top_navigation_band": 0,
+      "changed_pixels_outside_vision_overlay": 0
+    },
+    "focus": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-activity-cards-mist-focus-review-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "overlay_bounds": [
+        60,
+        341,
+        1476,
+        746
+      ],
+      "changed_pixels_in_title": 0,
+      "changed_pixels_in_top_navigation_band": 0,
+      "changed_pixels_outside_vision_overlay": 0
+    }
+  },
+  "focus_demonstration": {
+    "focused_example": "Activity 2",
+    "changed_pixels_outside_middle_example": 0,
+    "behaviour": "Foreground mist reduced; slightly warmer opaque lettering; identical scene, scale and positions",
+    "interactive_implementation": false
+  },
+  "protected_hashes_after": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3",
+    "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1",
+    "the-haunted-realm-navigation-approved-home-overlay.png": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98",
+    "the-haunted-realm-navigation-approved-activity-overlay.png": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561",
+    "the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+  },
+  "all_11_protected_assets_unchanged": true,
+  "architecture": "Three examples only; no activity count/order/names finalized; future list remains expandable"
+}

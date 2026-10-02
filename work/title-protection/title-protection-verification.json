@@ -1,0 +1,30 @@
+{
+  "status": "APPROVED / PROTECTED",
+  "approval": "User explicitly said TITLE APPROVED after visual inspection.",
+  "title": "THE HAUNTED REALM",
+  "design": "Ancient Village Sign",
+  "frozen_asset": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-approved.png",
+  "frozen_asset_sha256": "5f3db4e9112d076a73e22587fcaee26022b2188993a1db6abbb7a912abf68a4a",
+  "dimensions": [
+    650,
+    215
+  ],
+  "position_on_1536x1024_background": [
+    443,
+    65
+  ],
+  "bounds": [
+    443,
+    65,
+    1093,
+    280
+  ],
+  "horizontal_centre": 768,
+  "original_artwork_backup": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-original-artwork-backup.png",
+  "original_artwork_backup_sha256": "d40b8107d55723cd6976c880905564458dca17082d55aaaf7f561d6dc6d3f7c1",
+  "approved_reference": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-option-1-centred-review-v2.png",
+  "approved_reference_sha256": "1a4b8c14c4229b0c2e68db47086b0a741c667930b16e531dcb2455905a0c7942",
+  "approved_reference_exact_pixel_match": true,
+  "all_existing_protected_assets_unchanged": true,
+  "website_implementation_authorized": false
+}

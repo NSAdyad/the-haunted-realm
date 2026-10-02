@@ -1,0 +1,145 @@
+{
+  "scope": "Ground-up Option B visual redesign; STATIC REVIEW ONLY; navigation NOT APPROVED",
+  "protected_hashes_before": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "material_identity": "corroded black iron + clear aged glass + sparse chains; no oak plaques",
+  "views": {
+    "home": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-navigation-b-home-redesign-review-v3-final.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        8,
+        1520,
+        57
+      ],
+      "changed_pixels_in_protected_title": 0,
+      "changed_pixels_outside_navigation": 0,
+      "selected": "Home",
+      "activity_names": "Temporary neutral labels only",
+      "illustrations": "Empty translucent IMAGE placeholders only"
+    },
+    "activity": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        16,
+        296,
+        967
+      ],
+      "changed_pixels_in_protected_title": 0,
+      "changed_pixels_outside_navigation": 0,
+      "selected": "Activity 3",
+      "activity_names": "Temporary neutral labels only",
+      "illustrations": "Empty translucent IMAGE placeholders only"
+    }
+  },
+  "openness_comparison": {
+    "same_vertical_measurement_region": [
+      16,
+      16,
+      296,
+      968
+    ],
+    "v2_background_blend_contribution_percent": 52.06,
+    "v3_background_blend_contribution_percent": 72.59,
+    "v2_alpha_coverage_percent": 47.94,
+    "v3_alpha_coverage_percent": 27.41,
+    "glass_fill_alpha": 34,
+    "glass_base_transmission_percent": 86.67,
+    "individual_destination_panes": [
+      {
+        "bounds": [
+          34,
+          96,
+          278,
+          146
+        ],
+        "mean_background_transmission_percent": 69.41,
+        "area_with_at_least_70_percent_background_transmission_percent": 76.98
+      },
+      {
+        "bounds": [
+          34,
+          206,
+          278,
+          256
+        ],
+        "mean_background_transmission_percent": 67.7,
+        "area_with_at_least_70_percent_background_transmission_percent": 74.43
+      },
+      {
+        "bounds": [
+          34,
+          316,
+          278,
+          366
+        ],
+        "mean_background_transmission_percent": 69.17,
+        "area_with_at_least_70_percent_background_transmission_percent": 76.3
+      },
+      {
+        "bounds": [
+          34,
+          426,
+          278,
+          476
+        ],
+        "mean_background_transmission_percent": 65.81,
+        "area_with_at_least_70_percent_background_transmission_percent": 72.31
+      },
+      {
+        "bounds": [
+          34,
+          536,
+          278,
+          586
+        ],
+        "mean_background_transmission_percent": 67.22,
+        "area_with_at_least_70_percent_background_transmission_percent": 73.98
+      },
+      {
+        "bounds": [
+          34,
+          646,
+          278,
+          696
+        ],
+        "mean_background_transmission_percent": 66.99,
+        "area_with_at_least_70_percent_background_transmission_percent": 73.54
+      },
+      {
+        "bounds": [
+          34,
+          756,
+          278,
+          806
+        ],
+        "mean_background_transmission_percent": 68.76,
+        "area_with_at_least_70_percent_background_transmission_percent": 75.85
+      }
+    ],
+    "no_solid_backplate": true,
+    "text_and_iron_core_remain_opaque": true
+  },
+  "protected_hashes_after": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "all_protected_files_unchanged": true
+}

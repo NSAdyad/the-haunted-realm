@@ -1,0 +1,59 @@
+{
+  "status": "comparison-mockups-only-no-design-selected",
+  "source_sha256": "1561627199d2da3412c5d5e49143a6b699201659ad1cee56a38ceb8e96f28c06",
+  "background_dimensions": [
+    1536,
+    1024
+  ],
+  "options": [
+    {
+      "number": 1,
+      "label": "Ancient Village Sign",
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-option-1-mockup-v1.png",
+      "title_bounds": [
+        345,
+        65,
+        995,
+        280
+      ],
+      "display_size": [
+        650,
+        215
+      ],
+      "outside_title_overlay_changed_pixels": 0
+    },
+    {
+      "number": 2,
+      "label": "Moonlit Stone Inscription",
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-option-2-mockup-v1.png",
+      "title_bounds": [
+        320,
+        65,
+        1020,
+        282
+      ],
+      "display_size": [
+        700,
+        217
+      ],
+      "outside_title_overlay_changed_pixels": 0
+    },
+    {
+      "number": 3,
+      "label": "Victorian Manor Emblem",
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-option-3-mockup-v1.png",
+      "title_bounds": [
+        399,
+        65,
+        941,
+        255
+      ],
+      "display_size": [
+        542,
+        190
+      ],
+      "outside_title_overlay_changed_pixels": 0
+    }
+  ],
+  "protected_background_and_backup_unchanged": true
+}

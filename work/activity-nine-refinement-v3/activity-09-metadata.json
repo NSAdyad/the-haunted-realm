@@ -1,0 +1,29 @@
+{
+  "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-refinement-v3\\activity-09-scene.png",
+  "source_file": "C:\\Users\\DELL\\.codex\\generated_images\\01a0f854-a6ba-7f70-bf3d-e13468f92b52\\exec-e1beac0a-d7f5-44fb-a1d5-0f6930e9a9c6.png",
+  "generation_mode": "built-in imagegen edit, transparent_background true",
+  "dimensions": [
+    1942,
+    809
+  ],
+  "mode": "RGBA",
+  "sha256": "C2B3BE53E81D4D8443CD859ED5BE62655E9A41C2A008CE941A0702F907A5C784",
+  "transparent_pixels": 325793,
+  "translucent_pixels": 1245285,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "inspected": true,
+  "notes": [
+    "Original narrow-arch hall, burgundy linen, amber lamps and concierge retained in interpretation.",
+    "Two prominent original guests: gaunt translucent traveller and physically realistic wolf-featured guest.",
+    "Key rack and leather luggage communicate hotel arrival.",
+    "No rendered text or recognizable film imagery.",
+    "Source-to-review refinement includes requested guest/reception changes and some architectural/furniture/lighting drift; do not describe as pixel-local edit.",
+    "Wolf guest is a full physically realistic wolf-headed hybrid rather than only subtly wolf-featured, which strengthens monster cue.",
+    "Irregular mist edge is more scalloped/continuous than sparse; final transparency still genuine."
+  ]
+}

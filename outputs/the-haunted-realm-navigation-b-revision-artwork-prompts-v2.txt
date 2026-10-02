@@ -1,0 +1,20 @@
+plaque-material-prompt.txt
+Use case: precise-object-edit
+Asset type: one transparent navigation material artwork for a STATIC review mock-up.
+Input image: Image 1 is the ONLY edit target, the existing individual blank old oak nameplate. No scene image, no title image.
+Primary request: revise ONLY this single old plaque into a more eerie, sophisticated aged dark-oak nameplate with blackened bronze edging. Preserve the long low separate-plaque form, roughly 4:1, and ample uninterrupted dark wood reading surface. Restrained, thin twisted wrought-iron thorn edging follows the perimeter, and tiny fine cobweb strands occur at only one upper corner. Material is realistic aged grain, dark oak, oxidised blackened bronze, sparse cold moonlit patina and faint warm amber reflections. The result must feel like a physical ancient village prop, with refined restraint and readable blank wood centre.
+Composition/framing: exact straight front view, no perspective, no camera tilt. Retain low slightly arched profile and single-object composition. Reduce heavy ornate spikes and oversized flourishes to thin thorn-like metal tracing at the edge. Keep every physical edge uncropped with a clearly transparent margin on all sides.
+Transparency: fully opaque wood and metal reading surface. Genuine transparent alpha outside the physical plaque. No translucent centre, no scenery, no wall, no broad shadow, no halo, no fog or backdrop. All normal alpha antialiasing at the cutout edge should be preserved.
+Text: NONE. The full wood centre is empty and unlettered.
+Constraints: exactly one physical plaque, no text, letters, numbers, logos, symbols, icons, skulls, characters, figures, activity illustrations, placeholders, slots, panels, chains or extra objects. No cartoon, clipart or modern flat UI. Do not add a background or title. This is the one authorized material revision, not multiple options.
+
+
+chain-supports-prompt.txt
+Use case: product-mockup
+Asset type: transparent sparse antique chain supports for a STATIC navigation review mock-up.
+Primary request: a companion pair of sparse straight hanging antique iron chains in exact front view, realistic small linked chains hanging vertically near the left and right edges of a tall portrait canvas. There are exactly two separate chains and a huge empty transparent opening between them. Each chain is slim with small individual oval wrought iron links, slight restrained natural asymmetry and believable connections, not oversized decorative links.
+Style/medium: high-detail photoreal cinematic physical ironwork, ancient eerie village craft, blackened cold iron with subtle old warm bronze catching edges, sparse cool moonlit patina, restrained reflections. Sophisticated age and texture, no glow.
+Composition/framing: tall portrait canvas approximately 1:3 width-to-height, exact frontal orthographic view, both chains straight vertical and parallel, narrow chain columns at left and right with generous transparent margin outside and very large transparent empty centre. Full chains complete and uncropped, ends visible inside canvas; no connecting crosspiece. Chains will later be composited behind separate wood plaques.
+Transparency: genuine alpha everywhere except the physical chain links. Openings inside each link are genuinely transparent. No faint panel, no residual background or broad shadows. Links physically opaque.
+Text: NONE.
+Constraints: exactly two slim hanging chains only; no top or bottom frame, no wood, plaque, panel, backing, scenery, mist, lanterns, candles, objects, hooks beyond modest chain end links, characters, symbols, icons, skulls, letters, numbers, watermarks or UI. No cartoon, clipart or smooth modern vector treatment. No opaque full-height structure; the centre remains a huge completely transparent opening.

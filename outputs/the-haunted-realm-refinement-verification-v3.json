@@ -1,0 +1,318 @@
+{
+  "status": "UNAPPROVED STATIC VISUAL REFINEMENT",
+  "project": "The Haunted Realm",
+  "authorized_scope": "Four unapproved scene refinements and nine exact activity-name treatments, in the existing composition",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "activity_names": [
+    "ECHOES OF THE PAST",
+    "THE CURSED QUEST",
+    "THE BOOK OF SHADOWS",
+    "FASTEST FINGER FIRST",
+    "WORDS OF THE FEAST",
+    "THE PHANTOM ORDER",
+    "DOOR TO DARKNESS",
+    "BUILD THE HAUNTED BANQUET",
+    "HOTEL TRANSYLVANIA"
+  ],
+  "protected_hashes_before": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3",
+    "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1",
+    "the-haunted-realm-navigation-approved-home-overlay.png": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98",
+    "the-haunted-realm-navigation-approved-activity-overlay.png": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561",
+    "the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+  },
+  "artwork": [
+    {
+      "name": "ECHOES OF THE PAST",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-refinement-v3\\activity-01-scene.png",
+      "source_sha256": "B58036032FBBBE0DF2A93B32DE3951F1DA4AC2CB0CD840CD72A996293F8F71BC",
+      "raw_dimensions": [
+        1942,
+        809
+      ],
+      "display_box": [
+        75,
+        328,
+        495,
+        462
+      ],
+      "revision": "scene refined",
+      "true_transparency": true
+    },
+    {
+      "name": "THE CURSED QUEST",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-02-rest-cutout.png",
+      "source_sha256": "D89F3F991CC9FE46143EDD47062E607DC01A49DB523D965D2C1D377CD01676F2",
+      "raw_dimensions": [
+        1217,
+        529
+      ],
+      "display_box": [
+        570,
+        316,
+        966,
+        488
+      ],
+      "revision": "scene retained exactly",
+      "true_transparency": true
+    },
+    {
+      "name": "THE BOOK OF SHADOWS",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-refinement-v3\\activity-03-scene.png",
+      "source_sha256": "D8F71F19D58578C700586F32F78E32CA1C5F997EAFAC1C4AD626B946C35C3E43",
+      "raw_dimensions": [
+        1959,
+        803
+      ],
+      "display_box": [
+        1041,
+        312,
+        1461,
+        471
+      ],
+      "revision": "scene refined",
+      "true_transparency": true
+    },
+    {
+      "name": "FASTEST FINGER FIRST",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-04-rest-cutout.png",
+      "source_sha256": "B6BB97288EB847F05AF5821B7794BAFDAEB16C80E09F1B830B5AF647A432C9D3",
+      "raw_dimensions": [
+        1228,
+        566
+      ],
+      "display_box": [
+        99,
+        546,
+        472,
+        718
+      ],
+      "revision": "scene retained exactly",
+      "true_transparency": true
+    },
+    {
+      "name": "WORDS OF THE FEAST",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-05-rest-cutout.png",
+      "source_sha256": "A44F6EC599822131DA2067AA06261E98B733C6D72F9662C94CBE103C3AF4EF15",
+      "raw_dimensions": [
+        1187,
+        585
+      ],
+      "display_box": [
+        594,
+        539,
+        943,
+        711
+      ],
+      "revision": "scene retained exactly",
+      "true_transparency": true
+    },
+    {
+      "name": "THE PHANTOM ORDER",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-06-rest-cutout.png",
+      "source_sha256": "90750EDCE12C234F5D088408A44AE511DFEA269EBF4BE0CBED21508926D8B667",
+      "raw_dimensions": [
+        1227,
+        496
+      ],
+      "display_box": [
+        1041,
+        550,
+        1461,
+        720
+      ],
+      "revision": "scene retained exactly",
+      "true_transparency": true
+    },
+    {
+      "name": "DOOR TO DARKNESS",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-refinement-v3\\activity-07-scene.png",
+      "source_sha256": "66AFA3DD5FC9811D99931BD9B9F3C5C4BEF8825A139107BE4F1D3B161A3CD032",
+      "raw_dimensions": [
+        1942,
+        809
+      ],
+      "display_box": [
+        76,
+        769,
+        494,
+        941
+      ],
+      "revision": "scene refined",
+      "true_transparency": true
+    },
+    {
+      "name": "BUILD THE HAUNTED BANQUET",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-08-rest-cutout.png",
+      "source_sha256": "774256CC2F2B31831BECEFB091F542C270793DBF5B1127D839ABC9B2ACF60C5B",
+      "raw_dimensions": [
+        1503,
+        490
+      ],
+      "display_box": [
+        558,
+        791,
+        978,
+        928
+      ],
+      "revision": "scene retained exactly",
+      "true_transparency": true
+    },
+    {
+      "name": "HOTEL TRANSYLVANIA",
+      "source_file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-refinement-v3\\activity-09-scene.png",
+      "source_sha256": "C2B3BE53E81D4D8443CD859ED5BE62655E9A41C2A008CE941A0702F907A5C784",
+      "raw_dimensions": [
+        1942,
+        809
+      ],
+      "display_box": [
+        1039,
+        770,
+        1463,
+        946
+      ],
+      "revision": "scene refined",
+      "true_transparency": true
+    }
+  ],
+  "layout_preserved": {
+    "centres": [
+      285,
+      768,
+      1251
+    ],
+    "row_tops": [
+      309,
+      541,
+      770
+    ],
+    "stagger": [
+      0,
+      7,
+      -3,
+      5,
+      -2,
+      8,
+      -1,
+      4,
+      0
+    ],
+    "name_centres": [
+      507,
+      739,
+      973
+    ],
+    "maximum_scene_slots": [
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        420,
+        172
+      ],
+      [
+        438,
+        176
+      ]
+    ]
+  },
+  "retained_scene_checks": {
+    "THE CURSED QUEST": {
+      "changed_image_layer_pixels": 0
+    },
+    "FASTEST FINGER FIRST": {
+      "changed_image_layer_pixels": 0
+    },
+    "WORDS OF THE FEAST": {
+      "changed_image_layer_pixels": 0
+    },
+    "THE PHANTOM ORDER": {
+      "changed_image_layer_pixels": 0
+    },
+    "BUILD THE HAUNTED BANQUET": {
+      "changed_image_layer_pixels": 0
+    }
+  },
+  "pixel_checks": {
+    "resting": {
+      "title_changed_pixels": 0,
+      "navigation_band_changed_pixels": 0,
+      "pixels_changed_above_activity_area": 0,
+      "pixels_changed_outside_review_overlays": 0,
+      "unmodified_base_pixel_percent": 63.15,
+      "mean_base_visibility_activity_area_percent": 56.75
+    },
+    "focus_light_study": {
+      "title_changed_pixels": 0,
+      "navigation_band_changed_pixels": 0,
+      "pixels_changed_above_activity_area": 0,
+      "pixels_changed_outside_review_overlays": 0,
+      "unmodified_base_pixel_percent": 63.14,
+      "mean_base_visibility_activity_area_percent": 56.62
+    }
+  },
+  "comparison_notes": [
+    "Before/after scenes are design refinements, not animation keyframes.",
+    "Focus lettering uses the same font masks, positions, textures and mist geometry; only controlled light/opacity parameters change.",
+    "No final activity images or mobile layout are approved by this review."
+  ],
+  "unexpected_details": [
+    "Hotel guest has a full realistic wolf head rather than subtle wolf features.",
+    "Refined unapproved hotel artwork includes some architecture, furniture and lighting drift; protected sources are unaffected.",
+    "Door departure/bill detail is small at the all-nine scale; the dominant change is the deep route through reception and dining."
+  ],
+  "protected_hashes_after": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3",
+    "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1",
+    "the-haunted-realm-navigation-approved-home-overlay.png": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98",
+    "the-haunted-realm-navigation-approved-activity-overlay.png": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561",
+    "the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+  },
+  "all_11_protected_assets_unchanged": true,
+  "accepted_five_scene_layers_unchanged": true,
+  "no_website_implementation": true,
+  "no_navigation_or_title_changes": true,
+  "historical_visual_reference": "https://museum.wales/collections/historic-buildings/3/Bryn-Eryr-Iron-Age-Roundhouses/",
+  "historical_scope": "Archaeology-informed building forms used for ancient-past atmosphere; not a factual Samhain ritual or exact historical event."
+}

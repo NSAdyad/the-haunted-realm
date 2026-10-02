@@ -1,0 +1,13 @@
+Use case: product-mockup
+Asset type: isolated transparent title-and-decorative-frame artwork, comparison option 1 "Ancient Village Sign"; this concept label must NOT appear in the image.
+Primary request: generate a NEW standalone front-facing, photorealistic cinematic craft object: an ancient haunted-village entrance title plaque. This is an asset-only design comparison, not a website or scene.
+Input images: Image 1 at the supplied path is ONLY a supporting lighting, mood, and materials style reference. It is a protected background, NOT an edit target. Do not render or reproduce any of its village, buildings, scenery, moon, witch, windows, sky, ground, or scene composition.
+Scene/backdrop: genuine alpha transparency everywhere outside the complete isolated title plaque and its ornaments. No scenery, no backdrop, no floor, no cast shadow on a backdrop, no checkerboard pattern.
+Subject: a wide gently arched aged dark-oak plaque edged with tarnished bronze. Broad, legible Gothic capitals with sharp serifs. Place the exact small word THE centered above the large words HAUNTED REALM. Engraved weathered gold and amber lettering with dark recesses, restrained warm lantern highlights, open readable letter interiors. Small carved thorn details, ONE restrained little skull ornament at the top center, fine cobweb threads. Substantial yet compact, sophisticated and mysterious.
+Composition/framing: straight-on face, no perspective skew. Entire plaque, skull, thorns and cobwebs visible with generous fully transparent margin on all sides; nothing clipped. Prefer a 1536 x 512 wide 3:1 canvas; otherwise wide landscape, with compact shallow wide subject silhouette suitable for tight alpha cropping. Intended display about 600–700 pixels wide and 150–180 pixels high.
+Lighting/mood: realistic restrained directional light matching cool blue-purple moonlight and warm amber street illumination in Image 1; subtle believable metal highlights, no heavy glow.
+Materials/textures: real weathered oak grain, aged bronze patina, deeply engraved crafted letters, cinematic photographic material realism.
+Text (verbatim, only text): "THE HAUNTED REALM"
+Text layout: THE on a small centered upper line; HAUNTED REALM on one large lower line. Exact spelling T-H-E H-A-U-N-T-E-D R-E-A-L-M. All uppercase, three words once only.
+Constraints: output ONLY this isolated title-and-frame asset, truly transparent RGBA background. No other text. Preserve complete ornaments and clean edges.
+Avoid: Halloween word, concept label, extra characters or words, logos, watermark, emoji, cartoon, clipart, heavy neon, dripping letters, scenery, village, buildings, moon, bats, people, extra skulls, black fullscreen background, opaque rectangular background.

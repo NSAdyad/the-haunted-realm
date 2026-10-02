@@ -1,0 +1,46 @@
+{
+  "status": "review-candidate-not-approved",
+  "output": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-background-corrected-review-v3.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256_before": "63392bf751f4c5518a26e9d82188c3c29cdceb61b9a50c6e8f2f32bb34bc668f",
+  "source_sha256_after": "63392bf751f4c5518a26e9d82188c3c29cdceb61b9a50c6e8f2f32bb34bc668f",
+  "original_file_unchanged": true,
+  "outside_approved_regions_changed_pixels": 0,
+  "outside_approved_regions_exact_pixel_match": true,
+  "witch": {
+    "region": [
+      1070,
+      25,
+      1150,
+      85
+    ],
+    "changed_pixels": 639,
+    "actual_change_bbox": [
+      1085,
+      35,
+      1136,
+      75
+    ]
+  },
+  "window": {
+    "region": [
+      245,
+      35,
+      300,
+      115
+    ],
+    "changed_pixels": 367,
+    "actual_change_bbox": [
+      271,
+      66,
+      285,
+      101
+    ]
+  },
+  "window_frame_and_dividers_changed_pixels": 0,
+  "saved_png_lossless_pixel_match": true,
+  "method": "original pixels plus extracted existing witch and generated presence alpha, bounded compositing"
+}

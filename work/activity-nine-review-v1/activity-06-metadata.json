@@ -1,0 +1,59 @@
+{
+  "activity": "06",
+  "tool": "built-in image_gen.imagegen",
+  "intent": "new static review artwork only; no implementation",
+  "source_path": "C:\\Users\\DELL\\.codex\\generated_images\\01a0f710-2ea6-77a0-a61d-942339b55666\\exec-fbc358aa-4f50-4ce0-9453-d5dd35a2b5fa.png",
+  "workspace_copy": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-06-state-sheet.png",
+  "exact_prompt_path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-06-prompt.txt",
+  "source_sha256": "c3f3aa4137b652f97271fe7a0d570a227aa308e1b5232fe61f709a2a3236b0a0",
+  "copy_sha256": "c3f3aa4137b652f97271fe7a0d570a227aa308e1b5232fe61f709a2a3236b0a0",
+  "prompt_sha256": "2e67bc077ef0c9c5451d04603c52294707ec9b57edc39cba46ccd8550cba577a",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "fully_transparent_fraction": 0.296573135026925,
+  "partially_transparent_fraction": 0.7034255931259205,
+  "exact_centre_row_fully_transparent": false,
+  "centre_row_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_row_alpha_mean": 0.003987240829346092,
+  "centre_band_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_band_alpha_mean": 0.009053382118397598,
+  "fully_transparent_rows_near_centre": [],
+  "transparent_centre_gap_rows_inclusive": [
+    627,
+    627
+  ],
+  "upper_alpha_bounds": [
+    0,
+    0,
+    1254,
+    627
+  ],
+  "lower_alpha_bounds_relative_to_half": [
+    0,
+    0,
+    1253,
+    627
+  ],
+  "upper_lower_mean_abs_channel_difference": [
+    42.162337298952764,
+    36.07903766956902,
+    36.19454937183469,
+    49.63211566686762
+  ],
+  "visual_review": "Visually inspected: upper translucent ruled slip hovering above silver tray, lower opaque slip touching tray with curled corner; cloche shifts slightly. No readable order content or visible person. Same main setting, subtle generation variation in framing remains.",
+  "regenerations": 0,
+  "protected_sources": "No protected source read, supplied as reference/edit target, written, or modified by this agent; root verified protected hashes before generation."
+}

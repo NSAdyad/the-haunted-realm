@@ -1,0 +1,17 @@
+{
+  "Path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-background-review-v1.png",
+  "Width": 1536,
+  "Height": 1024,
+  "AspectRatio": 1.5,
+  "PixelFormat": "Format24bppRgb",
+  "FormatGuid": "b96b3caf-0728-11d3-9d7b-0000f81ef32e",
+  "Bytes": 3321891,
+  "SHA256": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+  "SourcePath": "C:\\Users\\DELL\\Downloads\\Halloweenyyyyyyyy_HAUNTED_NIGHT_CLEAN_APPROVED_RESTAURANT\\landing page.png",
+  "SourceSHA256": "70D35E5E995EE2F92166228831BEFF496DA10BF5DF37D5BCFD7A5E1FCF9DA5D3",
+  "Status": "review-candidate",
+  "Tool": "built-in image_gen",
+  "PromptPath": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\the-haunted-realm-background-edit-prompt-v1.txt",
+  "GeneratedPath": "C:\\Users\\DELL\\.codex\\generated_images\\01a0f68c-605f-7a30-a3bd-9a499cc10ddd\\exec-2ebe3a7b-a42d-4df2-b49d-281b2286deee.png",
+  "GeneratedAtUTC": "2026-10-01T08:24:24.5625688Z"
+}

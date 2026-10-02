@@ -1,0 +1,47 @@
+{
+  "status": "NAVIGATION DESIGN APPROVED / PROTECTED",
+  "recorded_date": "2026-10-01",
+  "assets": [
+    {
+      "file": "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    },
+    {
+      "file": "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    },
+    {
+      "file": "the-haunted-realm-navigation-approved-home-overlay.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    },
+    {
+      "file": "the-haunted-realm-navigation-approved-activity-overlay.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    },
+    {
+      "file": "the-haunted-realm-navigation-approved-iron-glass-frame.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    },
+    {
+      "file": "the-haunted-realm-navigation-approved-chain-supports.png",
+      "hash_matches": true,
+      "dimensions_match": true
+    }
+  ],
+  "protected_background_title_and_backups_unchanged": true,
+  "approved_reference_reconstruction": {
+    "home": {
+      "different_pixels_from_approved_reference": 0
+    },
+    "activity": {
+      "different_pixels_from_approved_reference": 0
+    }
+  },
+  "implementation_created": false,
+  "activity_visuals_created": false
+}

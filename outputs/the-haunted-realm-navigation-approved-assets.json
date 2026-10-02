@@ -1,0 +1,50 @@
+{
+  "project": "The Haunted Realm",
+  "status": "NAVIGATION DESIGN APPROVED / PROTECTED",
+  "approval_date": "2026-10-01",
+  "timezone": "Europe/Paris",
+  "scope": "Visual design approval only; implementation not authorized",
+  "approval_record": "the-haunted-realm-navigation-approval.md",
+  "assets": [
+    {
+      "role": "Approved horizontal Home visual reference",
+      "file": "the-haunted-realm-navigation-b-home-redesign-review-v3-final.png",
+      "dimensions": [1536, 1024],
+      "sha256": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3"
+    },
+    {
+      "role": "Approved vertical left-side activity visual reference",
+      "file": "the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png",
+      "dimensions": [1536, 1024],
+      "sha256": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1"
+    },
+    {
+      "role": "Exact separate horizontal navigation-only overlay",
+      "file": "the-haunted-realm-navigation-approved-home-overlay.png",
+      "dimensions": [1536, 1024],
+      "sha256": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98"
+    },
+    {
+      "role": "Exact separate vertical navigation-only overlay",
+      "file": "the-haunted-realm-navigation-approved-activity-overlay.png",
+      "dimensions": [1536, 1024],
+      "sha256": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561"
+    },
+    {
+      "role": "Approved iron and fractured-glass material artwork",
+      "file": "the-haunted-realm-navigation-approved-iron-glass-frame.png",
+      "dimensions": [2087, 754],
+      "sha256": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C"
+    },
+    {
+      "role": "Approved slender chain-support material artwork",
+      "file": "the-haunted-realm-navigation-approved-chain-supports.png",
+      "dimensions": [724, 2172],
+      "sha256": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+    }
+  ],
+  "temporary_only": ["IMAGE spaces", "numbered activity labels", "displayed example count", "Activity 3 selection example"],
+  "activity_limit": null,
+  "future_activity_visuals": "Unique realistic thematic identifier per activity, based on its approved information; propose, show, stop, obtain approval before replacing its IMAGE space",
+  "design_changes": "Explicit user request, or genuine technical dependency explained and approved before change"
+}

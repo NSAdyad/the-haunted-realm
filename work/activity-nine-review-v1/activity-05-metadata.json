@@ -1,0 +1,59 @@
+{
+  "activity": "05",
+  "tool": "built-in image_gen.imagegen",
+  "intent": "new static review artwork only; no implementation",
+  "source_path": "C:\\Users\\DELL\\.codex\\generated_images\\01a0f710-2ea6-77a0-a61d-942339b55666\\exec-f6b1c562-65eb-4de0-a019-5ef31bdc9826.png",
+  "workspace_copy": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-05-state-sheet.png",
+  "exact_prompt_path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-05-prompt.txt",
+  "source_sha256": "68d221e69b4c8167dafc53f0d239c905ee28951feec0ab56a23a0e9b572c006d",
+  "copy_sha256": "68d221e69b4c8167dafc53f0d239c905ee28951feec0ab56a23a0e9b572c006d",
+  "prompt_sha256": "2ca63610edb9269af52b92ab094136d2fa8f9c49230eab83cde39f4389473b97",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "fully_transparent_fraction": 0.2761243764769325,
+  "partially_transparent_fraction": 0.7238756235230674,
+  "exact_centre_row_fully_transparent": false,
+  "centre_row_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_row_alpha_mean": 0.003189792663476874,
+  "centre_band_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_band_alpha_mean": 0.00971010413734872,
+  "fully_transparent_rows_near_centre": [],
+  "transparent_centre_gap_rows_inclusive": [
+    627,
+    627
+  ],
+  "upper_alpha_bounds": [
+    0,
+    0,
+    1231,
+    627
+  ],
+  "lower_alpha_bounds_relative_to_half": [
+    0,
+    0,
+    1238,
+    627
+  ],
+  "upper_lower_mean_abs_channel_difference": [
+    27.86073528027696,
+    16.449267288854294,
+    11.74109389030064,
+    19.656657229560782
+  ],
+  "visual_review": "Visually inspected: open physical menu dominant with MENU on subject, no readable vocabulary or food names; upper low steam/cooler paper, lower lifted steam ribbon and warmer clearer line structure. Same main setting and menu, subtle generation variation in framing remains.",
+  "regenerations": 0,
+  "protected_sources": "No protected source read, supplied as reference/edit target, written, or modified by this agent; root verified protected hashes before generation."
+}

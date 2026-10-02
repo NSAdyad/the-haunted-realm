@@ -1,0 +1,28 @@
+{
+  "source": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-background-review-v1.png",
+  "source_sha256": "63392bf751f4c5518a26e9d82188c3c29cdceb61b9a50c6e8f2f32bb34bc668f",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "regions": {
+    "witch": [
+      1070,
+      25,
+      1150,
+      85
+    ],
+    "window": [
+      245,
+      35,
+      300,
+      115
+    ]
+  },
+  "window_context_box": [
+    200,
+    10,
+    340,
+    175
+  ]
+}

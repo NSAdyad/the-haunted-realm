@@ -1,0 +1,59 @@
+{
+  "activity": "04",
+  "tool": "built-in image_gen.imagegen",
+  "intent": "new static review artwork only; no implementation",
+  "source_path": "C:\\Users\\DELL\\.codex\\generated_images\\01a0f710-2ea6-77a0-a61d-942339b55666\\exec-51e4f14f-4e3e-4508-a6ec-9657efe5b17d.png",
+  "workspace_copy": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-04-state-sheet.png",
+  "exact_prompt_path": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\work\\activity-nine-review-v1\\activity-04-prompt.txt",
+  "source_sha256": "4c4968d40c13e5aa8abc20b8732880cb6469b8e3bfd1742b769e2eeb593e3c9c",
+  "copy_sha256": "4c4968d40c13e5aa8abc20b8732880cb6469b8e3bfd1742b769e2eeb593e3c9c",
+  "prompt_sha256": "2b7243cd2befded201cfdfef5749f7e5d988ce6a961ff9ef7d2a57d0f43ca40e",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "fully_transparent_fraction": 0.2951594769147023,
+  "partially_transparent_fraction": 0.7048405230852977,
+  "exact_centre_row_fully_transparent": false,
+  "centre_row_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_row_alpha_mean": 0.007177033492822967,
+  "centre_band_alpha_extrema": [
+    0,
+    1
+  ],
+  "centre_band_alpha_mean": 0.009944647715545549,
+  "fully_transparent_rows_near_centre": [],
+  "transparent_centre_gap_rows_inclusive": [
+    627,
+    627
+  ],
+  "upper_alpha_bounds": [
+    0,
+    0,
+    1244,
+    627
+  ],
+  "lower_alpha_bounds_relative_to_half": [
+    0,
+    0,
+    1244,
+    627
+  ],
+  "upper_lower_mean_abs_channel_difference": [
+    32.79503292812283,
+    25.360658969447687,
+    22.27026879217763,
+    23.82699063157386
+  ],
+  "visual_review": "Visually inspected: two anatomically plausible hands and actual quiz response buzzers; upper both poised, lower left index finger in contact with depressed cap, other still poised. No service bells, captions, icons or unexpected readable text.",
+  "regenerations": 0,
+  "protected_sources": "No protected source read, supplied as reference/edit target, written, or modified by this agent; root verified protected hashes before generation."
+}

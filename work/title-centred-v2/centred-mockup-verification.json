@@ -1,0 +1,33 @@
+{
+  "status": "selected-option-1-centred-review-only-awaiting-user-inspection",
+  "background_dimensions": [
+    1536,
+    1024
+  ],
+  "title_dimensions": [
+    650,
+    215
+  ],
+  "title_bounds": [
+    443,
+    65,
+    1093,
+    280
+  ],
+  "title_horizontal_centre": 768.0,
+  "background_horizontal_centre": 768.0,
+  "equal_horizontal_margins": 443,
+  "previous_title_bounds": [
+    345,
+    65,
+    995,
+    280
+  ],
+  "horizontal_shift_pixels": 98,
+  "title_design_and_scale_unchanged": true,
+  "protected_background_sha256": "1561627199d2da3412c5d5e49143a6b699201659ad1cee56a38ceb8e96f28c06",
+  "protected_background_and_backup_unchanged": true,
+  "outside_title_overlay_changed_pixels": 0,
+  "existing_artwork_sha256": "d40b8107d55723cd6976c880905564458dca17082d55aaaf7f561d6dc6d3f7c1",
+  "output": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-title-option-1-centred-review-v2.png"
+}

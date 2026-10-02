@@ -1,0 +1,76 @@
+{
+  "scope": "Option B visual revision only; static PNG review; no navigation implementation",
+  "protected_hashes_before": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "views": {
+    "home": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-navigation-b-home-review-v2.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        8,
+        1520,
+        56
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_label": "Home",
+      "labels": "Temporary neutral labels only",
+      "image_placeholders": "Empty labeled IMAGE slots; no final illustrations"
+    },
+    "activity": {
+      "file": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-30\\ar\\outputs\\the-haunted-realm-navigation-b-activity-review-v2.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "navigation_bounds": [
+        16,
+        16,
+        296,
+        966
+      ],
+      "changed_pixels_outside_navigation_overlay": 0,
+      "changed_pixels_in_protected_title_rectangle": 0,
+      "selected_label": "Activity 3",
+      "labels": "Temporary neutral labels only",
+      "image_placeholders": "Empty labeled IMAGE slots; no final illustrations"
+    }
+  },
+  "vertical_openness": {
+    "measurement_box": [
+      16,
+      16,
+      296,
+      968
+    ],
+    "previous_alpha_weighted_coverage_percent": 63.19,
+    "revised_alpha_weighted_coverage_percent": 47.94,
+    "previous_fully_uncovered_area_percent": 29.21,
+    "revised_fully_uncovered_area_percent": 44.45,
+    "opaque_backing_panel": false,
+    "visible_example_destinations": 7,
+    "example_plaque_size": [
+      280,
+      72
+    ],
+    "example_row_pitch": 110,
+    "space_between_plaque_bounds": 38
+  },
+  "protected_hashes_after": {
+    "the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1"
+  },
+  "protected_files_unchanged": true
+}
