@@ -1,0 +1,68 @@
+{
+  "tests": [
+    {
+      "test": "projector real wheel/inner list, outside lock and exact restoration",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 0,
+        "innerScrollAfterWheel": 0,
+        "innerMax": 0,
+        "physicalDevice": false
+      }
+    },
+    {
+      "test": "desktop real wheel/inner list, outside lock and exact restoration",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 290,
+        "innerScrollAfterWheel": 0,
+        "innerMax": 0,
+        "physicalDevice": false
+      }
+    },
+    {
+      "test": "laptop real wheel/inner list, outside lock and exact restoration",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 413,
+        "innerScrollAfterWheel": 44,
+        "innerMax": 44,
+        "physicalDevice": false
+      }
+    },
+    {
+      "test": "tablet real wheel/inner list, outside lock and exact restoration",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 600,
+        "innerScrollAfterWheel": 0,
+        "innerMax": 0,
+        "physicalDevice": false
+      }
+    },
+    {
+      "test": "mobile real wheel/inner list, outside lock and exact restoration + emulated touch swipe",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 600,
+        "innerScrollAfterWheel": 16,
+        "innerMax": 16,
+        "physicalDevice": false
+      }
+    },
+    {
+      "test": "mobile-narrow real wheel/inner list, outside lock and exact restoration + emulated touch swipe",
+      "status": "PASS",
+      "evidence": {
+        "originalScroll": 600,
+        "innerScrollAfterWheel": 48,
+        "innerMax": 48,
+        "physicalDevice": false
+      }
+    }
+  ],
+  "errors": [],
+  "badRequests": [],
+  "passed": 6,
+  "failed": 0
+}

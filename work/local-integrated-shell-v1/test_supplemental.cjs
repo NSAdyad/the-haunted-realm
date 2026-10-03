@@ -1,0 +1,72 @@
+const {chromium}=require('C:/Users/DELL/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('node:fs');
+const path=require('node:path');
+const OUT=path.join(__dirname,process.argv[2]||'supplemental');fs.mkdirSync(OUT,{recursive:true});
+const results=[],errors=[];
+const assert=(condition,message)=>{if(!condition)throw new Error(message)};
+async function test(name,fn){try{const evidence=await fn();results.push({test:name,status:'PASS',evidence})}catch(e){results.push({test:name,status:'FAIL',actual:String(e)});console.log('TEST FAILURE',name,String(e))}fs.writeFileSync(path.join(OUT,'partial-results.json'),JSON.stringify({tests:results,errors},null,2))}
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true});
+ const page=await context.newPage();page.setDefaultTimeout(7000);
+ page.on('pageerror',e=>errors.push(String(e)));
+ await test('Mobile overlay touch close/outside close, page scroll state restored',async()=>{
+  await page.goto('http://127.0.0.1:4173/');await page.locator('.protected-title').waitFor();
+  await page.locator('[data-home-destination="words-of-the-feast"]').scrollIntoViewIfNeeded();
+  const before=await page.evaluate(()=>scrollY);
+  await page.locator('.activities-control').tap();
+  assert(await page.locator('main').evaluate(e=>e.inert&&getComputedStyle(e).visibility==='hidden'),'Content not isolated');
+  await page.touchscreen.tap(365,350);
+  assert(await page.locator('.activity-drawer').isHidden(),'Outside tap did not close');
+  assert(await page.locator('.protected-title').count()===1,'Outside tap clicked through to a destination');
+  assert(await page.evaluate(()=>scrollY)===before,'Outside close changed page scroll');
+  assert(await page.locator('.activities-control').evaluate(e=>e===document.activeElement),'Outside close focus');
+  await page.locator('.activities-control').tap();await page.locator('.close-drawer').tap();
+  assert(await page.locator('main').evaluate(e=>!e.inert&&getComputedStyle(e).visibility==='visible'),'Content not restored');
+  assert(await page.evaluate(()=>scrollY)===before,'Close changed page scroll');
+  await page.locator('.activities-control').tap();await page.keyboard.press('Escape');
+  assert(await page.locator('.activity-drawer').isHidden(),'Escape did not close');
+  assert(await page.evaluate(()=>scrollY)===before,'Escape changed page scroll');
+  return {scrollY:before};
+ });
+ await test('Activity skip link retains exact route and focuses main',async()=>{
+  await page.goto('http://127.0.0.1:4173/#/activities/door-to-darkness');await page.locator('h1').waitFor();
+  await page.locator('.skip-link').focus();await page.keyboard.press('Enter');
+  assert(await page.locator('main').evaluate(e=>e===document.activeElement),'Activity skip focus');
+  assert(new URL(page.url()).hash==='#/activities/door-to-darkness','Activity skip changed route');
+ });
+ await test('Hover/focus reuses existing focus lettering, reduced-motion preference honored',async()=>{
+  await page.goto('http://127.0.0.1:4173/#/');await page.locator('.protected-title').waitFor();
+  const card=page.locator('.scene-destination').first();
+  await card.hover();await page.waitForTimeout(220);
+  assert(await card.locator('.name-focus').evaluate(e=>getComputedStyle(e).opacity)==='1','Hover lighting missing');
+  const source=await card.locator('.name-focus').getAttribute('src');
+  assert(source==='work/activity-nine-refinement-v3/name-01-focus.png','Wrong focus artwork');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  assert(await card.locator('.name-focus').evaluate(e=>getComputedStyle(e).transitionDuration)==='0s','Reduced motion transition');
+  return {source};
+ });
+ await context.close();
+ const capacityContext=await browser.newContext({viewport:{width:1366,height:768}});
+ const capacityPage=await capacityContext.newPage();capacityPage.setDefaultTimeout(7000);
+ capacityPage.on('pageerror',e=>errors.push(String(e)));
+ const original=fs.readFileSync(path.join(__dirname,'../../src/activities.js'),'utf8');
+ await capacityPage.route('**/src/activities.js',route=>route.fulfill({contentType:'text/javascript',body:original+`\n// In-memory test fixture only; never written to production.\nACTIVITIES.push(...Array.from({length:6},(_,i)=>({...ACTIVITIES[0],id:'test-only-capacity-'+(i+10),name:'Test-only capacity entry '+(i+10)})));`}));
+ await test('Registry expands to 15 entries/routes without changing production files',async()=>{
+  await capacityPage.goto('http://127.0.0.1:4173/');await capacityPage.locator('.protected-title').waitFor();
+  assert(await capacityPage.locator('.scene-destination').count()===15,'Home capacity limit');
+  assert(await capacityPage.locator('.destination-link').count()===15,'Nav capacity limit');
+  await capacityPage.locator('.activities-control').click();
+  await capacityPage.locator('[data-destination="test-only-capacity-15"]').click();
+  await capacityPage.getByRole('heading',{name:'Test-only capacity entry 15',exact:true}).waitFor();
+  assert(await capacityPage.locator('.destination-link[aria-current="page"]').getAttribute('data-destination')==='test-only-capacity-15','Extended selected state');
+  const last=await capacityPage.locator('.destination-link').last().boundingBox();
+  const list=await capacityPage.locator('.destination-list').boundingBox();
+  assert(last.y+last.height<=list.y+list.height+.5,'Expanded last item unreachable');
+  return {testOnlyCount:15,productionFilesChanged:false,fixtureArtwork:'Existing asset reused only in intercepted test response'};
+ });
+ await capacityContext.close();await browser.close();
+ const result={tests:results,errors,passed:results.filter(t=>t.status==='PASS').length,failed:results.filter(t=>t.status==='FAIL').length};
+ fs.writeFileSync(path.join(OUT,'results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+ process.exitCode=result.failed||errors.length?1:0;
+})().catch(e=>{console.error(e);process.exitCode=1});

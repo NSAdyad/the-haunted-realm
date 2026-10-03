@@ -1,0 +1,210 @@
+import { ACTIVITIES, GLOBAL_ASSETS } from './activities.js';
+import { initializePresentation } from './presentation.js';
+
+const main = document.querySelector('#main-content');
+const navigationRegion = document.querySelector('#navigation-region');
+const announcement = document.querySelector('#route-announcement');
+const narrow = window.matchMedia('(max-width: 900px)');
+const destinations = new Map(ACTIVITIES.map(activity => [activity.id, activity]));
+let menuOpen = false;
+let currentActivity = null;
+let isHome = true;
+let overlayScrollPosition = null;
+
+const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+}[character]));
+const routeFor = activity => `#/activities/${encodeURIComponent(activity.id)}`;
+
+navigationRegion.innerHTML = `
+  <nav class="global-navigation" aria-label="Global navigation">
+    <div class="navigation-controls">
+      <a class="home-control" href="#/">Home</a>
+      <button class="activities-control" type="button" aria-expanded="false" aria-controls="activity-drawer">
+        Activities <span class="chevron" aria-hidden="true"></span>
+      </button>
+    </div>
+    <section id="activity-drawer" class="activity-drawer" aria-label="Activities" hidden>
+      <div class="drawer-chains" aria-hidden="true"></div>
+      <header class="drawer-heading">
+        <span>Activities</span>
+        <button type="button" class="close-drawer">Close</button>
+      </header>
+      <a class="rail-home" href="#/">Home</a>
+      <ul class="destination-list">
+        ${ACTIVITIES.map(activity => `
+          <li><a class="destination-link" data-destination="${escapeHtml(activity.id)}" href="${routeFor(activity)}">
+            <picture class="destination-image">
+              <source media="(max-width: 900px)" srcset="${escapeHtml(activity.navImage34)}">
+              <img src="${escapeHtml(activity.navImage38)}" width="38" height="38" alt="">
+            </picture>
+            <span>${escapeHtml(activity.name)}</span>
+          </a></li>`).join('')}
+      </ul>
+    </section>
+  </nav>`;
+
+const drawer = document.querySelector('#activity-drawer');
+const toggle = document.querySelector('.activities-control');
+const closeButton = document.querySelector('.close-drawer');
+const homeControl = document.querySelector('.home-control');
+const navLinks = [...document.querySelectorAll('.destination-link')];
+const destinationList = document.querySelector('.destination-list');
+const isPermanentRail = () => !isHome && !narrow.matches;
+
+function keepCurrentDestinationVisible() {
+  if (drawer.hidden) return;
+  const selected = navLinks.find(link => link.dataset.destination === currentActivity?.id);
+  if (!selected) return;
+  const row = selected.getBoundingClientRect();
+  const list = destinationList.getBoundingClientRect();
+  if (row.top < list.top) destinationList.scrollTop -= list.top - row.top;
+  else if (row.bottom > list.bottom) destinationList.scrollTop += row.bottom - list.bottom;
+}
+
+function updateNavigation() {
+  const permanent = isPermanentRail();
+  const overlay = menuOpen && !permanent;
+  drawer.hidden = !permanent && !menuOpen;
+  toggle.setAttribute('aria-expanded', String(permanent || menuOpen));
+  if (overlay && overlayScrollPosition === null) {
+    overlayScrollPosition = { x: window.scrollX, y: window.scrollY };
+    document.body.style.top = `-${overlayScrollPosition.y}px`;
+    document.body.classList.add('is-menu-open');
+  } else if (!overlay && overlayScrollPosition !== null) {
+    const previousScroll = overlayScrollPosition;
+    overlayScrollPosition = null;
+    document.body.classList.remove('is-menu-open');
+    document.body.style.top = '';
+    window.scrollTo(previousScroll.x, previousScroll.y);
+  }
+  const compactPresentation = overlay && window.innerWidth <= 600;
+  presentation.controls.classList.toggle('in-drawer', compactPresentation);
+  if (compactPresentation) closeButton.before(presentation.controls);
+  else navigationRegion.append(presentation.controls);
+  presentation.button.textContent = compactPresentation
+    ? (presentation.isActive() ? 'Exit mode' : 'Present')
+    : (presentation.isActive() ? 'Exit presentation' : 'Presentation mode');
+  navigationRegion.classList.toggle('modal-navigation', overlay);
+  if (overlay) {
+    navigationRegion.setAttribute('role', 'dialog');
+    navigationRegion.setAttribute('aria-modal', 'true');
+    navigationRegion.setAttribute('aria-label', 'Activities navigation');
+  } else {
+    navigationRegion.removeAttribute('role');
+    navigationRegion.removeAttribute('aria-modal');
+    navigationRegion.removeAttribute('aria-label');
+  }
+  main.inert = overlay;
+  if (isHome) homeControl.setAttribute('aria-current', 'page');
+  else homeControl.removeAttribute('aria-current');
+  navLinks.forEach(link => {
+    if (link.dataset.destination === currentActivity?.id) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  });
+  keepCurrentDestinationVisible();
+}
+
+function setMenuOpen(open, restoreFocus = false) {
+  menuOpen = open;
+  updateNavigation();
+  if (open && !isPermanentRail()) closeButton.focus({ preventScroll: true });
+  else if (restoreFocus && !isPermanentRail()) toggle.focus({ preventScroll: true });
+}
+
+toggle.addEventListener('click', () => setMenuOpen(!menuOpen));
+closeButton.addEventListener('click', () => setMenuOpen(false, true));
+navigationRegion.addEventListener('click', event => {
+  if (event.target.closest('a')) setMenuOpen(false);
+});
+document.addEventListener('keydown', event => {
+  if (!menuOpen || isPermanentRail()) return;
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    setMenuOpen(false, true);
+  }
+  if (event.key === 'Tab') {
+    const focusable = [...navigationRegion.querySelectorAll('a, button')]
+      .filter(element => element.getClientRects().length && !element.disabled);
+    const first = focusable[0], last = focusable.at(-1);
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault(); first.focus();
+    }
+  }
+});
+document.addEventListener('click', event => {
+  if (menuOpen && !navigationRegion.contains(event.target)) setMenuOpen(false, true);
+});
+document.querySelector('.skip-link').addEventListener('click', event => {
+  event.preventDefault();
+  setMenuOpen(false);
+  main.focus();
+});
+
+function renderHome() {
+  main.className = 'home-main';
+  main.innerHTML = `
+    <header class="home-title">
+      <h1 tabindex="-1"><img class="protected-title" src="${GLOBAL_ASSETS.title}" width="650" height="215" alt="The Haunted Realm"></h1>
+    </header>
+    <section class="home-destinations" aria-label="Explore the activities">
+      ${ACTIVITIES.map(activity => `
+        <a class="scene-destination" href="${routeFor(activity)}" aria-label="${escapeHtml(activity.name)}" data-home-destination="${escapeHtml(activity.id)}">
+          <span class="scene-space"><img class="activity-scene" src="${escapeHtml(activity.scene)}" alt="" loading="eager"></span>
+          <span class="scene-name">
+            <img class="name-rest" src="${escapeHtml(activity.lettering)}" alt="">
+            <img class="name-focus" src="${escapeHtml(activity.letteringFocus)}" alt="">
+          </span>
+        </a>`).join('')}
+    </section>`;
+}
+
+function renderActivity(activity) {
+  main.className = 'activity-main';
+  main.innerHTML = `
+    <header class="activity-page-heading">
+      <p class="shell-status">Page shell</p>
+      <h1 tabindex="-1">${escapeHtml(activity.name)}</h1>
+    </header>
+    <section class="content-space" aria-labelledby="content-area-heading">
+      <h2 id="content-area-heading">Activity content area</h2>
+      <p>Content and interactions will be developed after separate approval.</p>
+    </section>`;
+}
+
+function renderUnknown() {
+  main.className = 'activity-main';
+  main.innerHTML = '<header class="activity-page-heading"><h1 tabindex="-1">Destination not found</h1></header><section class="content-space"><p>This destination is not in the current activity list.</p><a href="#/">Return Home</a></section>';
+}
+
+function renderRoute(initial = false) {
+  const hash = location.hash || '#/';
+  const match = /^#\/activities\/([^/]+)$/.exec(hash);
+  let activityId = null;
+  if (match) {
+    try { activityId = decodeURIComponent(match[1]); }
+    catch { activityId = null; }
+  }
+  currentActivity = destinations.get(activityId) || null;
+  isHome = hash === '#/' || hash === '#';
+  menuOpen = false;
+  document.body.classList.toggle('home-view', isHome);
+  document.body.classList.toggle('activity-view', !isHome);
+  if (isHome) renderHome();
+  else if (currentActivity) renderActivity(currentActivity);
+  else renderUnknown();
+  updateNavigation();
+  const name = isHome ? 'The Haunted Realm' : currentActivity?.name || 'Destination not found';
+  document.title = isHome ? name : `${name} | The Haunted Realm`;
+  announcement.textContent = `Opened ${name}`;
+  window.scrollTo(0, 0);
+  if (!initial) main.querySelector('h1')?.focus({ preventScroll: true });
+}
+
+narrow.addEventListener('change', () => { menuOpen = false; updateNavigation(); });
+window.addEventListener('resize', () => updateNavigation());
+window.addEventListener('hashchange', () => renderRoute());
+const presentation = initializePresentation(() => updateNavigation());
+renderRoute(true);

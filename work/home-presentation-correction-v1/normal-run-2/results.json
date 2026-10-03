@@ -1,0 +1,761 @@
+{
+  "run": "normal-run-2",
+  "engine": "Installed Microsoft Edge (Chromium), headless Playwright",
+  "viewports": [
+    [
+      "projector",
+      1920,
+      1080
+    ],
+    [
+      "desktop",
+      1600,
+      900
+    ],
+    [
+      "laptop",
+      1366,
+      768
+    ],
+    [
+      "tablet",
+      768,
+      1024
+    ],
+    [
+      "mobile",
+      390,
+      844
+    ],
+    [
+      "mobile-narrow",
+      320,
+      812
+    ]
+  ],
+  "tests": [
+    {
+      "viewport": "projector",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 635,
+          "y": 65,
+          "width": 650,
+          "height": 215
+        }
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 0,
+        "scrollHeight": 1080,
+        "innerHeight": 1080,
+        "scrollWidth": 1920,
+        "innerWidth": 1920
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 635,
+        "y": 65,
+        "width": 650,
+        "height": 215
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "mouse clicks"
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 896,
+        "scrollHeight": 896,
+        "row": {
+          "x": 16,
+          "y": 856,
+          "width": 460,
+          "height": 72
+        },
+        "image": {
+          "x": 44,
+          "y": 873,
+          "width": 38,
+          "height": 38
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "projector",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "projector",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "projector",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 475,
+          "y": 65,
+          "width": 650,
+          "height": 215
+        }
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 290,
+        "scrollHeight": 1190,
+        "innerHeight": 900,
+        "scrollWidth": 1600,
+        "innerWidth": 1600
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 475,
+        "y": 65,
+        "width": 650,
+        "height": 215
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "mouse clicks"
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 716,
+        "scrollHeight": 764,
+        "row": {
+          "x": 16,
+          "y": 808,
+          "width": 430,
+          "height": 72
+        },
+        "image": {
+          "x": 44,
+          "y": 825,
+          "width": 38,
+          "height": 38
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "desktop",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "laptop",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 358,
+          "y": 65,
+          "width": 650,
+          "height": 215
+        }
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 413,
+        "scrollHeight": 1181,
+        "innerHeight": 768,
+        "scrollWidth": 1366,
+        "innerWidth": 1366
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 358,
+        "y": 65,
+        "width": 650,
+        "height": 215
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "mouse clicks"
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 584,
+        "scrollHeight": 764,
+        "row": {
+          "x": 16,
+          "y": 676,
+          "width": 430,
+          "height": 72
+        },
+        "image": {
+          "x": 44,
+          "y": 693,
+          "width": 38,
+          "height": 38
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "laptop",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "laptop",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "laptop",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "tablet",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 59,
+          "y": 65,
+          "width": 650,
+          "height": 215
+        }
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 647,
+        "scrollHeight": 1671,
+        "innerHeight": 1024,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 59,
+        "y": 65,
+        "width": 650,
+        "height": 215
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "emulated touch taps"
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 862,
+        "scrollHeight": 862,
+        "row": {
+          "x": 16,
+          "y": 756,
+          "width": 288,
+          "height": 70
+        },
+        "image": {
+          "x": 38,
+          "y": 774,
+          "width": 34,
+          "height": 34
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "tablet",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "tablet",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "tablet",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 16,
+          "y": 65,
+          "width": 358,
+          "height": 118.40625
+        }
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 1721,
+        "scrollHeight": 2565,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 16,
+        "y": 65,
+        "width": 358,
+        "height": 118.40625
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "emulated touch taps"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 682,
+        "scrollHeight": 698,
+        "row": {
+          "x": 16,
+          "y": 740,
+          "width": 288,
+          "height": 70
+        },
+        "image": {
+          "x": 38,
+          "y": 758,
+          "width": 34,
+          "height": 34
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "mobile",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Home, exact nine names, approved images and no emojis",
+      "status": "PASS",
+      "evidence": {
+        "title": {
+          "x": 16,
+          "y": 65,
+          "width": 288,
+          "height": 95.25
+        }
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Home bottom card and document scrolling are reachable",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 1611,
+        "scrollHeight": 2423,
+        "innerHeight": 812,
+        "scrollWidth": 320,
+        "innerWidth": 320
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Home drawer only conceals content temporarily; close restores exact title",
+      "status": "PASS",
+      "evidence": {
+        "x": 16,
+        "y": 65,
+        "width": 288,
+        "height": 95.25
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Every Home scene opens its exact shell and returns Home",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9,
+        "input": "emulated touch taps"
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Home menu reaches every activity; activity navigation transitions through all nine",
+      "status": "PASS",
+      "evidence": {
+        "destinations": 9
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Last Hotel entry: actual navigation scroll, complete label and 34/38px image",
+      "status": "PASS",
+      "evidence": {
+        "clientHeight": 650,
+        "scrollHeight": 698,
+        "row": {
+          "x": 16,
+          "y": 708,
+          "width": 288,
+          "height": 70
+        },
+        "image": {
+          "x": 38,
+          "y": 726,
+          "width": 34,
+          "height": 34
+        },
+        "selectedColour": "rgb(255, 218, 143)"
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Direct destination URL, reload, back/forward preserve exact route/current state",
+      "status": "PASS",
+      "evidence": {
+        "direct": "the-book-of-shadows",
+        "history": "Hotel -> back Book -> forward Hotel -> Home"
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Keyboard opens menu, traps focus, reaches final entry and activates it",
+      "status": "PASS",
+      "evidence": {
+        "focusableCount": 13,
+        "lastDestination": "Hotel Transylvania"
+      }
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Home route restores a programmatically focusable heading",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "Skip link focuses content without changing the Home route",
+      "status": "PASS"
+    },
+    {
+      "viewport": "mobile-narrow",
+      "test": "No local console/runtime/network errors",
+      "status": "PASS"
+    },
+    {
+      "viewport": "additional-routing",
+      "test": "Pages project-prefix entry/assets and every direct route reload",
+      "status": "PASS",
+      "evidence": {
+        "prefix": "http://127.0.0.1:4173/the-haunted-realm/",
+        "routeReloads": 9
+      }
+    },
+    {
+      "viewport": "additional-routing",
+      "test": "Title exception boundary at 649 and 650px; resize preserves routing",
+      "status": "PASS"
+    },
+    {
+      "viewport": "additional-routing",
+      "test": "Unknown route handled without incorrect activity",
+      "status": "PASS"
+    },
+    {
+      "viewport": "additional-routing",
+      "test": "Malformed encoded route handled without runtime exception",
+      "status": "PASS"
+    }
+  ],
+  "metrics": [
+    {
+      "viewport": "projector",
+      "rail": {
+        "x": 16,
+        "y": 16,
+        "width": 460,
+        "height": 1048
+      },
+      "content": {
+        "x": 508,
+        "y": 207.5,
+        "width": 1376,
+        "height": 830
+      }
+    },
+    {
+      "viewport": "desktop",
+      "rail": {
+        "x": 16,
+        "y": 16,
+        "width": 430,
+        "height": 868
+      },
+      "content": {
+        "x": 478,
+        "y": 203,
+        "width": 1086,
+        "height": 650
+      }
+    },
+    {
+      "viewport": "laptop",
+      "rail": {
+        "x": 16,
+        "y": 16,
+        "width": 430,
+        "height": 736
+      },
+      "content": {
+        "x": 478,
+        "y": 195.96875,
+        "width": 852,
+        "height": 518
+      }
+    }
+  ],
+  "errors": [],
+  "badRequests": [],
+  "passed": 70,
+  "failed": 0
+}

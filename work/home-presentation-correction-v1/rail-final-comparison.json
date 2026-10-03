@@ -1,0 +1,337 @@
+{
+  "method": "Final strict acceptance: all18 contemporaneous verified-original/current rail pairs have ZERO changed pixels and identical measured state. Archived-vs-repeated-original differences are separately retained as browser rendering-history evidence, not relaxed current-code pixel acceptance.",
+  "tests": [
+    {
+      "width": 1920,
+      "id": "echoes-of-the-past",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 echoes-of-the-past",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "the-cursed-quest",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 the-cursed-quest",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "the-book-of-shadows",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 the-book-of-shadows",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "fastest-finger-first",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 fastest-finger-first",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "words-of-the-feast",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 words-of-the-feast",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "the-phantom-order",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 the-phantom-order",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "door-to-darkness",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 door-to-darkness",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "build-the-haunted-banquet",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 build-the-haunted-banquet",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1920,
+      "id": "hotel-transylvania",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1920 hotel-transylvania",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "echoes-of-the-past",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 27779,
+        "maxChannelDiff": 2,
+        "meanAbsChannelDiff": 0.024697453235591506
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 echoes-of-the-past",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "the-cursed-quest",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 the-cursed-quest",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "the-book-of-shadows",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 the-book-of-shadows",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "fastest-finger-first",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 fastest-finger-first",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "words-of-the-feast",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 words-of-the-feast",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "the-phantom-order",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 the-phantom-order",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "door-to-darkness",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 door-to-darkness",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "build-the-haunted-banquet",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 build-the-haunted-banquet",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    },
+    {
+      "width": 1366,
+      "id": "hotel-transylvania",
+      "sameGeometrySelectionSourcesMaterialsDPR": true,
+      "archivedVsOriginalReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "originalVsCurrentReplay": {
+        "changedPixels": 0,
+        "maxChannelDiff": 0,
+        "meanAbsChannelDiff": 0.0
+      },
+      "status": "PASS",
+      "test": "Strict original/current rail pixel comparison 1366 hotel-transylvania",
+      "source": "rail-rendering-replay-v2/comparison-results.json"
+    }
+  ],
+  "passed": 18,
+  "failed": 0,
+  "strictOriginalCurrentPixelExact": 18,
+  "strictArchivedOriginalPixelExact": 17,
+  "errors": [],
+  "badRequests": [],
+  "inference": "Small channel-only changes with unchanged source/geometry, also reproduced between archived original and exact original source replay, support browser raster/compositor rounding variation. The precise internal GPU rounding mechanism is not independently proven.",
+  "earlier_exact_comparison_failure": "rail-pixel-comparison.json; preserved7matches/11differences, explained by controlled original replay; no runtime correction applied."
+}

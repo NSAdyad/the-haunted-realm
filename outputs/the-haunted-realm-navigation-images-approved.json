@@ -1,0 +1,155 @@
+{
+  "project": "The Haunted Realm",
+  "recorded_date": "2026-10-02",
+  "scope": "Individually approved navigation artwork only; no website implementation or final navigation geometry approval",
+  "approved_images": {
+    "Echoes of the Past": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-echoes-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "635C75D8C030905D103547E41690216A7431B8003C41D672CD49F4492D670E05",
+      "approval_record": "outputs/the-haunted-realm-echoes-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-echoes-navigation-entry-review-v1.png",
+      "reference_note": "Preserve the existing reference; the whole board, provisional geometry and mobile readability are not approved implementations."
+    },
+    "The Cursed Quest": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-cursed-quest-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "769DCC3822B08FAD9FF14DCD38E1D519CE06E35A5D244AC5F3E804EC5FBEF3AE",
+      "approval_record": "outputs/the-haunted-realm-cursed-quest-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-cursed-quest-navigation-entry-review-v1.png",
+      "reference_note": "Preserve the approved image appearance and existing review; this does not approve final navigation geometry or implemented quiz behaviour."
+    },
+    "The Book of Shadows": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-book-of-shadows-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "92B2113248B402BCFC3FC6CF0D7B4C74235FB50265ED7547D95168F5E1E144AF",
+      "approval_record": "outputs/the-haunted-realm-book-of-shadows-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-book-of-shadows-navigation-entry-review-v1.png",
+      "reference_note": "Preserve the dominant realistic book and existing review appearance; this does not approve final navigation geometry or implemented vocabulary behaviour."
+    },
+    "Fastest Finger First": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-fastest-finger-first-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "7F2B22364E94AE8BD820086996C70E387BC472328DA4444C4035D9ED9495A975",
+      "approval_record": "outputs/the-haunted-realm-fastest-finger-first-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-fastest-finger-first-navigation-entry-review-v1.png",
+      "accepted_small_size_limitation": "Background competitors and mist are less apparent at thumbnail size; the user accepts this and finds the illuminated plunger and active amber light sufficiently recognizable.",
+      "reference_note": "Preserve the approved response-device artwork and review appearance; this does not approve final navigation geometry or implemented game behaviour."
+    },
+    "Words of the Feast": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-words-of-the-feast-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "A86B35F797A3639142B65D94AD938DF011D371D7174B8C67C93A9C413C7E98E7",
+      "approval_record": "outputs/the-haunted-realm-words-of-the-feast-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-words-of-the-feast-navigation-entry-review-v1.png",
+      "accepted_small_size_limitation": "Fine writing, cutlery detail and vapour diminish at navigation size; the user accepts the main menu silhouette as sufficiently recognizable.",
+      "writing_scope": "Visual decoration only; not approved lesson/vocabulary content.",
+      "reference_note": "Preserve the menu and dining-context artwork; this does not approve final navigation geometry or implemented vocabulary/pronunciation behaviour."
+    },
+    "The Phantom Order": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-phantom-order-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "5EDCC385202CBE7BC3E87D15C76EECDE4DD6D3E080BB10B8A3B40AEBE5DFA492",
+      "approval_record": "outputs/the-haunted-realm-phantom-order-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-phantom-order-navigation-entry-review-v1.png",
+      "accepted_small_size_limitation": "Fine writing and materialization details diminish at navigation size; the user accepts the central curling ticket silhouette as recognizable.",
+      "writing_scope": "Decorative only; not approved vocabulary, game content, orders or clues.",
+      "reference_note": "Preserve the spectral ticket and restaurant-service artwork; this does not approve final navigation geometry or implemented game behaviour."
+    },
+    "Door to Darkness": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-door-to-darkness-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "CA6780FCFD224FCD161BC710E24C5705A007CAC85E8DC366DB717C1B2BF99389",
+      "approval_record": "outputs/the-haunted-realm-door-to-darkness-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-door-to-darkness-navigation-entry-review-v1.png",
+      "accepted_small_size_limitation": "Fine restaurant details diminish at navigation size; the user accepts the dominant threshold and warm opening as recognizable.",
+      "reference_note": "Preserve the doorway, reception and dining-depth artwork. This does not approve final navigation geometry or implemented customer-journey behaviour.",
+      "separate_landing_observation": "The larger Landing Page scene has a relatively small departure/bill cue; this remains UNRESOLVED SEPARATELY and the scene remains unchanged."
+    },
+    "Build the Haunted Banquet": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-build-the-haunted-banquet-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "4279EB082241C1BAFC79E688D3ED5B2667F98E1C328222105C5842FB04C807D7",
+      "approval_record": "outputs/the-haunted-realm-build-the-haunted-banquet-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-build-the-haunted-banquet-navigation-entry-review-v1.png",
+      "accepted_small_size_limitation": "The arranging gesture and planning details are clearer enlarged; the user accepts the plate and spectral hand at navigation size.",
+      "writing_scope": "Any planning-material writing is decorative only; not approved lesson content.",
+      "reference_note": "Protect active unfinished restaurant-preparation artwork; this does not approve final navigation geometry or implemented preparation/role-play content."
+    },
+    "Hotel Transylvania": {
+      "status": "APPROVED / PROTECTED — NAVIGATION IMAGE",
+      "file": "outputs/the-haunted-realm-hotel-transylvania-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "B52E7ACCB7CF63C9964B9D679A3D03450D0803DD4EB14C74CCEDDAF91B50DBD3",
+      "approval_record": "outputs/the-haunted-realm-hotel-transylvania-navigation-image-approval.md",
+      "appearance_reference": "outputs/the-haunted-realm-hotel-transylvania-mobile-bottom-scrolled-review-v1.png",
+      "appearance_reference_hashes": {
+        "outputs/the-haunted-realm-hotel-transylvania-mobile-bottom-scrolled-review-v1.png": "018FB43B57BCF069BE3A72B550FF87B4DFBCC5C41DD2418C65E039AB319A8254",
+        "work/hotel-transylvania-mobile-bottom-scrolled-review-v1/hotel-transylvania-mobile-complete-entry-review.png": "E8C684DB0EBA37CC8895CB8BBCE4AF9AD065E5FD8E5FCD653EBEBAA1C31BA67F",
+        "work/hotel-transylvania-mobile-bottom-scrolled-review-v1/hotel-transylvania-mobile-bottom-scrolled-viewport-review.png": "D62C5E2A900DE34AE989E1DFAEF8CF939294D6CB876B8E688D5367F02A25592D"
+      },
+      "existing_desktop_review_reference": "outputs/the-haunted-realm-hotel-transylvania-navigation-entry-review-v1.png",
+      "desktop_reference_caveat": "Historical v1 board contains the preserved failed mobile sample; use the separately approved corrected mobile reference.",
+      "accepted_small_size_limitation": "Fine facial details and gestures diminish at navigation size.",
+      "reference_note": "Protect original guest/waiter artwork and approved navigation-size appearance. This does not protect final geometry or implemented role-play behaviour.",
+      "preserved_failure_history": "work/hotel-transylvania-navigation-image-review-v1/; original failed files unchanged."
+    }
+  },
+  "mobile_requirement": "NAVIGATION / MOBILE READABILITY — LIVE VALIDATION REQUIREMENT; test underlying content through transparent glass. Do not solve by changing approved Echoes artwork.",
+  "geometry": "CURRENT DESIGN DIRECTION / SUBJECT TO LIVE VALIDATION",
+  "landing_activity_name_lettering": "UNRESOLVED",
+  "historical_artwork_only_approvals": {
+    "Hotel Transylvania": {
+      "status": "NAVIGATION ARTWORK APPROVED",
+      "full_navigation_entry_status": "NOT YET FULLY APPROVED",
+      "file": "outputs/the-haunted-realm-hotel-transylvania-navigation-image-review-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "B52E7ACCB7CF63C9964B9D679A3D03450D0803DD4EB14C74CCEDDAF91B50DBD3",
+      "approval_record": "outputs/the-haunted-realm-hotel-transylvania-navigation-artwork-approval.md",
+      "accepted_small_size_limitation": "Fine facial details and gestures diminish at navigation size.",
+      "protection": "Exact artwork protected; no regeneration, redesign, character/lighting/composition changes or film imitation.",
+      "failed_attempt": "Preserve outputs/the-haunted-realm-hotel-transylvania-navigation-entry-review-v1.png and original work/hotel-transylvania-navigation-image-review-v1/ failure records unchanged.",
+      "current_authorization": "Separate static bottom-scrolled mobile review only; existing 34-pixel thumbnail/materials/fonts/width/row/spacing unchanged; full entry awaits personal inspection.",
+      "superseded_by_full_entry_approval": "outputs/the-haunted-realm-hotel-transylvania-navigation-image-approval.md"
+    }
+  },
+  "current_scope": "Nine current fully approved navigation artwork assets; provisional navigation geometry; first local integrated shell authorized, no commit/push/deployment."
+}

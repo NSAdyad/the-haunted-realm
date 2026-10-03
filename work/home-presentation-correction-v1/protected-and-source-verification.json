@@ -1,0 +1,34 @@
+{
+  "protected_count": 20,
+  "protected_hashes_after": {
+    "outputs/the-haunted-realm-background-corrected-review-v3.png": "1561627199D2DA3412C5D5E49143A6B699201659AD1CEE56A38CEB8E96F28C06",
+    "outputs/the-haunted-realm-background-review-v1.png": "63392BF751F4C5518A26E9D82188C3C29CDCEB61B9A50C6E8F2F32BB34BC668F",
+    "outputs/the-haunted-realm-title-approved.png": "5F3DB4E9112D076A73E22587FCAEE26022B2188993A1DB6ABBB7A912ABF68A4A",
+    "outputs/the-haunted-realm-title-option-1-centred-review-v2.png": "1A4B8C14C4229B0C2E68DB47086B0A741C667930B16E531DCB2455905A0C7942",
+    "outputs/the-haunted-realm-title-original-artwork-backup.png": "D40B8107D55723CD6976C880905564458DCA17082D55AAAF7F561D6DC6D3F7C1",
+    "outputs/the-haunted-realm-navigation-b-home-redesign-review-v3-final.png": "3F9F352DEEBADD00B3B590F71E7E3370E882064C42B6FE7D953F2D13181E5DE3",
+    "outputs/the-haunted-realm-navigation-b-activity-redesign-review-v3-final.png": "A2554321B13D1DFC384AA6C38C400A404C1A8B2328A80B600A0770AD00C119E1",
+    "outputs/the-haunted-realm-navigation-approved-home-overlay.png": "B5D6CA9EB01578654DE54A873E8FB0763FB758659581B141E222D803F82C1E98",
+    "outputs/the-haunted-realm-navigation-approved-activity-overlay.png": "464603480D09A43E5919EEE5CEDD9613AAD8015EAD85853EBB6BEF76A1684561",
+    "outputs/the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "outputs/the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C",
+    "outputs/the-haunted-realm-echoes-navigation-image-review-v1.png": "635C75D8C030905D103547E41690216A7431B8003C41D672CD49F4492D670E05",
+    "outputs/the-haunted-realm-cursed-quest-navigation-image-review-v1.png": "769DCC3822B08FAD9FF14DCD38E1D519CE06E35A5D244AC5F3E804EC5FBEF3AE",
+    "outputs/the-haunted-realm-book-of-shadows-navigation-image-review-v1.png": "92B2113248B402BCFC3FC6CF0D7B4C74235FB50265ED7547D95168F5E1E144AF",
+    "outputs/the-haunted-realm-fastest-finger-first-navigation-image-review-v1.png": "7F2B22364E94AE8BD820086996C70E387BC472328DA4444C4035D9ED9495A975",
+    "outputs/the-haunted-realm-words-of-the-feast-navigation-image-review-v1.png": "A86B35F797A3639142B65D94AD938DF011D371D7174B8C67C93A9C413C7E98E7",
+    "outputs/the-haunted-realm-phantom-order-navigation-image-review-v1.png": "5EDCC385202CBE7BC3E87D15C76EECDE4DD6D3E080BB10B8A3B40AEBE5DFA492",
+    "outputs/the-haunted-realm-door-to-darkness-navigation-image-review-v1.png": "CA6780FCFD224FCD161BC710E24C5705A007CAC85E8DC366DB717C1B2BF99389",
+    "outputs/the-haunted-realm-build-the-haunted-banquet-navigation-image-review-v1.png": "4279EB082241C1BAFC79E688D3ED5B2667F98E1C328222105C5842FB04C807D7",
+    "outputs/the-haunted-realm-hotel-transylvania-navigation-image-review-v1.png": "B52E7ACCB7CF63C9964B9D679A3D03450D0803DD4EB14C74CCEDDAF91B50DBD3"
+  },
+  "all_protected_unchanged": true,
+  "pre_existing_count": 561,
+  "pre_existing_changed": [
+    "AGENTS.md",
+    "src/app.js",
+    "src/styles.css"
+  ],
+  "pre_existing_missing": [],
+  "existing_image_changes": []
+}

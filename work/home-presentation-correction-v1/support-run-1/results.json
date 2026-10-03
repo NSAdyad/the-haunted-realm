@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "test": "Mobile overlay touch close/outside close, page scroll state restored",
+      "status": "PASS",
+      "evidence": {
+        "scrollY": 918
+      }
+    },
+    {
+      "test": "Activity skip link retains exact route and focuses main",
+      "status": "PASS"
+    },
+    {
+      "test": "Hover/focus reuses existing focus lettering, reduced-motion preference honored",
+      "status": "PASS",
+      "evidence": {
+        "source": "work/activity-nine-refinement-v3/name-01-focus.png"
+      }
+    },
+    {
+      "test": "Registry expands to 15 entries/routes without changing production files",
+      "status": "PASS",
+      "evidence": {
+        "testOnlyCount": 15,
+        "productionFilesChanged": false,
+        "fixtureArtwork": "Existing asset reused only in intercepted test response"
+      }
+    }
+  ],
+  "errors": [],
+  "passed": 4,
+  "failed": 0
+}

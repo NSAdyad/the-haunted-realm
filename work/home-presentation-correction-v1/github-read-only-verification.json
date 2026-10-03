@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-10-02",
+  "method": "Read-only GitHub connector",
+  "repository": "NSAdyad/the-haunted-realm",
+  "visibility": "public",
+  "default_branch": "main",
+  "remote_main_commit": "125798046dfc25e5b97e331ffc86112468c0f20d",
+  "authenticated_login": "NSAdyad",
+  "pages_source": "main / (root)",
+  "pages_source_evidence": "User's current explicit configuration; local infrastructure records. Current Pages settings GET is not exposed by this connector.",
+  "mutations_performed": []
+}

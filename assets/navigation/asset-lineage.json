@@ -1,0 +1,180 @@
+{
+  "method": "Existing pure pane authoring definitions and protected material assets only; no new artwork generation",
+  "source_authoring_file": "work/navigation-lettering-decision-v1/compose_decision_studies.py",
+  "source_authoring_sha256": "33A2EFE25CA81CA7B0187C898175CDBE3CD567AD42C3E83D06874FA322630431",
+  "source_material_hashes": {
+    "outputs/the-haunted-realm-navigation-approved-iron-glass-frame.png": "7AFF8D87BECB5FE5C53F0665CFD842655BE30B8D1FFF4008823143DA0231223C",
+    "outputs/the-haunted-realm-navigation-approved-chain-supports.png": "4160CCDF58B263EE03731FC3510078820FF811AB7E8D87CF6540ECFD03CB039C"
+  },
+  "derived_files": {
+    "assets/navigation/frame-430-72-rest.png": {
+      "dimensions": [
+        430,
+        72
+      ],
+      "sha256": "31916CBEF165E4C287755DEE2F3E459FE4D35B7CA529A6F104301F05170CF537",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-430-72-current.png": {
+      "dimensions": [
+        430,
+        72
+      ],
+      "sha256": "BC3DEED46A1C9684822AFE5A320B6889F3553D8720DCFDC804E73BDDE566D904",
+      "existing_pane_variant": 0,
+      "current": true
+    },
+    "assets/navigation/frame-460-72-rest.png": {
+      "dimensions": [
+        460,
+        72
+      ],
+      "sha256": "171154ED5C62FA1EBC4DE8103483A48143DBE93BD5F345F356C6BDFE9C3CEDF5",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-460-72-current.png": {
+      "dimensions": [
+        460,
+        72
+      ],
+      "sha256": "BC79479C701121AB978FA556AB328D9C4BDBAD2288D8D3297F25EEEDA496BCD7",
+      "existing_pane_variant": 0,
+      "current": true
+    },
+    "assets/navigation/frame-288-70-rest.png": {
+      "dimensions": [
+        288,
+        70
+      ],
+      "sha256": "8EDD68420D61569F794310209234DAB39A4C28AC957AD7EEC565AD23D9ECAF54",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-288-70-current.png": {
+      "dimensions": [
+        288,
+        70
+      ],
+      "sha256": "CFDE4263AECC69EA4A1AF93203918D300A1709C686F58EF461B33371E6A8869D",
+      "existing_pane_variant": 0,
+      "current": true
+    },
+    "assets/navigation/frame-430-64-rest.png": {
+      "dimensions": [
+        430,
+        64
+      ],
+      "sha256": "867EE33BA8FC721BF39EE1B1E84EAE3E22FE14AC1A51CCF14BB966736C6E5657",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-430-44-rest.png": {
+      "dimensions": [
+        430,
+        44
+      ],
+      "sha256": "F4E77396DCA90A275E9BCBA8C1603E22A60C1CA6055FFBA71DED00C5C152AF7A",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-460-44-rest.png": {
+      "dimensions": [
+        460,
+        44
+      ],
+      "sha256": "D32D9CBB44AC90B7D94D5CA555276E6299F038F49D0CF81D3332F1F38B6AF7C8",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-288-44-rest.png": {
+      "dimensions": [
+        288,
+        44
+      ],
+      "sha256": "63B061A49C50CD02BC4D891BCF03911886F963FF5EAD0BB000385943C9153884",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-430-52-rest.png": {
+      "dimensions": [
+        430,
+        52
+      ],
+      "sha256": "67F36FB5D1386E439485740E23495573E086FA8CC81E0F01AF5084CABD61A96D",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-460-52-rest.png": {
+      "dimensions": [
+        460,
+        52
+      ],
+      "sha256": "F6202A58FD64E380181F5AEC929F97298588DD3752D761FB0A2D07A4F5F6D453",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-179-48-rest.png": {
+      "dimensions": [
+        179,
+        48
+      ],
+      "sha256": "86F8EBECFB041140C06EBF2FD177EB8820615A2A7ED6975CDED43A74A34F93FB",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-179-48-current.png": {
+      "dimensions": [
+        179,
+        48
+      ],
+      "sha256": "389D9823110635293FC1A99386048D2C64F8383000EF78C343E1173513DA2120",
+      "existing_pane_variant": 0,
+      "current": true
+    },
+    "assets/navigation/frame-136-52-rest.png": {
+      "dimensions": [
+        136,
+        52
+      ],
+      "sha256": "FBD9D8BF88B4D5C9279EB0AA3A457B9B61C9349A4C438FF64A949A495380AFD6",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/frame-136-52-current.png": {
+      "dimensions": [
+        136,
+        52
+      ],
+      "sha256": "E0D4F77D77A63321C11897749E865D1B7E6F55571AD8708C330DB52E07C35BA7",
+      "existing_pane_variant": 0,
+      "current": true
+    },
+    "assets/navigation/frame-160-52-rest.png": {
+      "dimensions": [
+        160,
+        52
+      ],
+      "sha256": "F61A4617BA3B718CC68B8D035C0C9BFCA188A3464BDFAF507C237B70A3EEAB48",
+      "existing_pane_variant": 0,
+      "current": false
+    },
+    "assets/navigation/chain-left.png": {
+      "dimensions": [
+        66,
+        916
+      ],
+      "sha256": "7B53041CE6E1BDDE203D5D2CB6AC988B0A03BD15CAB6C94D8431F53F6F04B789",
+      "method": "Unchanged existing supports() side extraction"
+    },
+    "assets/navigation/chain-right.png": {
+      "dimensions": [
+        66,
+        916
+      ],
+      "sha256": "BAA557BDB50EF324E2849143E7B792B8D4FE20A14740B656D0EE1EA9AC8603B1",
+      "method": "Unchanged existing supports() side extraction"
+    }
+  }
+}
