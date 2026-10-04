@@ -4,12 +4,14 @@ import { initializePresentation } from './presentation.js';
 const main = document.querySelector('#main-content');
 const navigationRegion = document.querySelector('#navigation-region');
 const announcement = document.querySelector('#route-announcement');
+const skipLink = document.querySelector('.skip-link');
 const narrow = window.matchMedia('(max-width: 900px)');
 const destinations = new Map(ACTIVITIES.map(activity => [activity.id, activity]));
 let menuOpen = false;
 let currentActivity = null;
 let isHome = true;
 let overlayScrollPosition = null;
+let presentationSnapshot = null;
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -63,9 +65,12 @@ function keepCurrentDestinationVisible() {
 }
 
 function updateNavigation() {
-  const permanent = isPermanentRail();
+  const activityPresentation = Boolean(currentActivity) && presentation.isActive();
+  document.body.classList.toggle('activity-presentation', activityPresentation);
+  if (activityPresentation) menuOpen = false;
+  const permanent = isPermanentRail() && !activityPresentation;
   const overlay = menuOpen && !permanent;
-  drawer.hidden = !permanent && !menuOpen;
+  drawer.hidden = activityPresentation || (!permanent && !menuOpen);
   toggle.setAttribute('aria-expanded', String(permanent || menuOpen));
   if (overlay && overlayScrollPosition === null) {
     overlayScrollPosition = { x: window.scrollX, y: window.scrollY };
@@ -80,8 +85,12 @@ function updateNavigation() {
   }
   const compactPresentation = overlay && window.innerWidth <= 600;
   presentation.controls.classList.toggle('in-drawer', compactPresentation);
-  if (compactPresentation) closeButton.before(presentation.controls);
+  if (activityPresentation) document.body.append(presentation.controls);
+  else if (compactPresentation) closeButton.before(presentation.controls);
   else navigationRegion.append(presentation.controls);
+  navigationRegion.hidden = activityPresentation;
+  navigationRegion.inert = activityPresentation;
+  skipLink.hidden = activityPresentation;
   presentation.button.textContent = compactPresentation
     ? (presentation.isActive() ? 'Exit mode' : 'Present')
     : (presentation.isActive() ? 'Exit presentation' : 'Presentation mode');
@@ -103,6 +112,34 @@ function updateNavigation() {
     else link.removeAttribute('aria-current');
   });
   keepCurrentDestinationVisible();
+}
+
+function preparePresentation() {
+  presentationSnapshot = currentActivity ? {
+    route: location.hash || '#/',
+    scroll: overlayScrollPosition || { x: window.scrollX, y: window.scrollY },
+    railScroll: destinationList.scrollTop,
+    focus: document.activeElement
+  } : null;
+  // Clearing the overlay also removes its fixed-body scroll lock and main.inert.
+  // The same activity DOM, including its future internal controls, stays mounted.
+  if (currentActivity) setMenuOpen(false);
+}
+
+function restorePresentation(restore) {
+  const snapshot = presentationSnapshot;
+  presentationSnapshot = null;
+  if (!restore || !snapshot || snapshot.route !== (location.hash || '#/')) return;
+  const restorePosition = () => {
+    if (presentation.isActive() || snapshot.route !== (location.hash || '#/')) return;
+    destinationList.scrollTop = snapshot.railScroll;
+    const focus = snapshot.focus?.isConnected && snapshot.focus.getClientRects().length
+      ? snapshot.focus : main;
+    focus.focus({ preventScroll: true });
+    window.scrollTo(snapshot.scroll.x, snapshot.scroll.y);
+  };
+  restorePosition();
+  requestAnimationFrame(restorePosition);
 }
 
 function setMenuOpen(open, restoreFocus = false) {
@@ -137,7 +174,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (menuOpen && !navigationRegion.contains(event.target)) setMenuOpen(false, true);
 });
-document.querySelector('.skip-link').addEventListener('click', event => {
+skipLink.addEventListener('click', event => {
   event.preventDefault();
   setMenuOpen(false);
   main.focus();
@@ -159,6 +196,15 @@ function renderHome() {
           </span>
         </a>`).join('')}
     </section>`;
+  updateHomeComposition();
+}
+
+function updateHomeComposition() {
+  if (!isHome) return;
+  const choices = main.querySelector('.home-destinations');
+  if (!choices) return;
+  const columns = Number.parseInt(getComputedStyle(choices).getPropertyValue('--home-columns'), 10) || 3;
+  choices.style.setProperty('--home-row-count', Math.ceil(ACTIVITIES.length / columns));
 }
 
 function renderActivity(activity) {
@@ -168,7 +214,7 @@ function renderActivity(activity) {
       <p class="shell-status">Page shell</p>
       <h1 tabindex="-1">${escapeHtml(activity.name)}</h1>
     </header>
-    <section class="content-space" aria-labelledby="content-area-heading">
+    <section class="content-space activity-stage" aria-labelledby="content-area-heading">
       <h2 id="content-area-heading">Activity content area</h2>
       <p>Content and interactions will be developed after separate approval.</p>
     </section>`;
@@ -180,6 +226,9 @@ function renderUnknown() {
 }
 
 function renderRoute(initial = false) {
+  // Browser history/direct route changes leave the old presentation before
+  // replacing its activity. Entering or exiting presentation never changes URL.
+  if (presentation.isActive()) presentation.leaveForRoute();
   const hash = location.hash || '#/';
   const match = /^#\/activities\/([^/]+)$/.exec(hash);
   let activityId = null;
@@ -204,7 +253,10 @@ function renderRoute(initial = false) {
 }
 
 narrow.addEventListener('change', () => { menuOpen = false; updateNavigation(); });
-window.addEventListener('resize', () => updateNavigation());
+window.addEventListener('resize', () => { updateNavigation(); updateHomeComposition(); });
 window.addEventListener('hashchange', () => renderRoute());
-const presentation = initializePresentation(() => updateNavigation());
+const presentation = initializePresentation(() => updateNavigation(), {
+  beforeEnter: preparePresentation,
+  afterExit: restorePresentation
+});
 renderRoute(true);

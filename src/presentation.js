@@ -1,5 +1,8 @@
 // Shared display state. Route rendering and activity state remain with the router.
-export function initializePresentation(onChange = () => {}) {
+export function initializePresentation(onChange = () => {}, {
+  beforeEnter = () => {},
+  afterExit = () => {}
+} = {}) {
   const region = document.querySelector('#navigation-region');
   const target = document.documentElement;
   const controls = document.createElement('div');
@@ -54,17 +57,22 @@ export function initializePresentation(onChange = () => {}) {
     }
   }
 
-  function leavePresentation(message = 'Presentation mode ended.') {
+  function leavePresentation(message = 'Presentation mode ended.', restore = true) {
     const owned = ownerVersion;
     version += 1;
     controls.dataset.fullscreen = 'inactive';
     updateMode(false, message);
+    afterExit(restore);
     if (owned !== null) exitOwnedFullscreen(owned);
   }
 
   function enterPresentation() {
+    // The router closes any site drawer before hiding site navigation. It never
+    // remounts the current activity, and this remains in the activation handler.
+    beforeEnter();
     const requestVersion = ++version;
     updateMode(true, 'Presentation layout is active.');
+    button.focus({ preventScroll: true });
 
     // An earlier request may still complete after an exit. Do not issue a
     // competing request; its completion is cleaned up without resetting routes.
@@ -160,5 +168,10 @@ export function initializePresentation(onChange = () => {}) {
     }
   });
 
-  return { isActive: () => active, controls, button };
+  return {
+    isActive: () => active,
+    controls,
+    button,
+    leaveForRoute: () => leavePresentation('Presentation mode ended after changing destination.', false)
+  };
 }

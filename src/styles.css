@@ -18,7 +18,7 @@ a { color: inherit; }
 button, a { touch-action: manipulation; }
 .realm-background {
   position: fixed; inset: 0; z-index: -1;
-  background: url('../outputs/the-haunted-realm-background-corrected-review-v3.png') center / cover no-repeat;
+  background: url('../outputs/the-haunted-realm-background-corrected-review-v3.png') center top / cover no-repeat;
 }
 main { position: relative; }
 .is-menu-open main { visibility: hidden; }
@@ -92,6 +92,7 @@ main { position: relative; }
 .home-title h1 { margin: 0; font-size: 0; }
 .protected-title { display: block; width: 650px; height: 215px; margin: 0 auto; }
 .home-destinations {
+  --home-columns: 3;
   max-width: 1480px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px 24px; margin: 28px auto 0; padding: 0 22px 32px;
 }
@@ -120,9 +121,23 @@ main { position: relative; }
   font-size: 16px; text-shadow: -1px 0 #070b12, 1px 0 #070b12, 0 -1px #070b12, 0 1px #070b12;
 }
 .presentation-toggle[aria-pressed='true'] { color: #ffda8f; }
-@media (min-width: 1200px) and (min-height: 1000px) {
-  .home-destinations { margin-top: 12px; row-gap: 10px; }
-  .scene-name { margin-top: -12px; margin-bottom: -12px; }
+/* Fit the destination composition, rather than scaling the protected title or
+   concealing overflow. Extra registry entries retain readable, scrollable rows. */
+@media (min-width: 1200px) {
+  .home-destinations {
+    --home-columns: 3;
+    --home-name-height: 104px;
+    --home-scene-height: clamp(88px, calc((100svh - 316px - (var(--home-row-count, 3) - 1) * 16px) / var(--home-row-count, 3) - var(--home-name-height)), 178px);
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 16px 24px; margin-top: 12px; padding-bottom: 24px;
+  }
+  .home-destinations .scene-destination { width: calc((100% - (var(--home-columns) - 1) * 24px) / var(--home-columns)); }
+  .home-destinations .scene-space { height: var(--home-scene-height); }
+  .home-destinations .activity-scene { max-height: var(--home-scene-height); }
+  .home-destinations .scene-name { height: var(--home-name-height); align-items: center; }
+}
+@media (min-width: 1200px) and (max-height: 999px) {
+  .home-destinations { --home-columns: 5; --home-name-height: 64px; }
 }
 @media (min-width: 1800px) {
   :root { --rail-width: 460px; --nav-font: 24px; --row-rest: url('../assets/navigation/frame-460-72-rest.png'); --row-current: url('../assets/navigation/frame-460-72-current.png'); --rail-heading: url('../assets/navigation/frame-460-44-rest.png'); --rail-home: url('../assets/navigation/frame-460-52-rest.png'); }
@@ -130,7 +145,7 @@ main { position: relative; }
   .home-view .destination-link { font-size: 22px; }
 }
 @media (max-width: 1100px) {
-  .home-destinations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-destinations { --home-columns: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 900px) {
   :root { --rail-width: 288px; --nav-font: 20px; --row-rest: url('../assets/navigation/frame-288-70-rest.png'); --row-current: url('../assets/navigation/frame-288-70-current.png'); --rail-heading: url('../assets/navigation/frame-288-44-rest.png'); }
@@ -154,11 +169,33 @@ main { position: relative; }
 }
 @media (max-width: 649px) {
   .protected-title { width: calc(100% - 32px); height: auto; }
-  .home-destinations { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 0 16px 28px; }
+  .home-destinations { --home-columns: 1; grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 0 16px 28px; }
   .scene-space { height: 168px; }
   .activity-scene { max-height: 168px; }
   .activity-main { padding-left: 16px; padding-right: 16px; }
   .content-space { padding: 20px; }
+}
+@media (orientation: portrait) {
+  .realm-background { background-position: 82% top; }
+}
+/* The stage owns activity content and its internal controls. Only site chrome
+   is hidden; the same DOM stays mounted throughout enter/exit. */
+.activity-presentation .skip-link { display: none; }
+.activity-presentation .activity-main {
+  margin: 0; padding: 64px 24px 20px; height: 100svh; min-height: 0;
+  display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 16px;
+}
+.activity-presentation .activity-page-heading { margin: 0; }
+.activity-presentation .shell-status { display: none; }
+.activity-presentation .activity-stage { min-height: 0; height: 100%; overflow: auto; }
+body.activity-presentation .presentation-controls {
+  top: 8px; bottom: auto; left: auto; right: 16px; transform: none;
+}
+@supports (height: 100dvh) {
+  @media (min-width: 1200px) {
+    .home-destinations { --home-scene-height: clamp(88px, calc((100dvh - 316px - (var(--home-row-count, 3) - 1) * 16px) / var(--home-row-count, 3) - var(--home-name-height)), 178px); }
+  }
+  .activity-presentation .activity-main { height: 100dvh; }
 }
 @media (max-width: 600px) {
   .presentation-controls, .activity-view .presentation-controls { top: auto; left: auto; right: 12px; bottom: 8px; transform: none; }
