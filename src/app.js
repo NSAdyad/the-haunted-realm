@@ -1,6 +1,6 @@
 import { ACTIVITIES, GLOBAL_ASSETS } from './activities.js';
 import { initializePresentation } from './presentation.js';
-import { mountEchoes } from './echoes.js?v=activity-1';
+import { mountEchoes } from './echoes.js?v=echoes-original-1';
 
 const main = document.querySelector('#main-content');
 const navigationRegion = document.querySelector('#navigation-region');

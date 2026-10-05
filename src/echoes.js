@@ -5,6 +5,12 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp
 const items = (entries, className) => entries?.length ? `<dl class="${className}">${entries.map(entry => `<div><dt>${escape(entry.label)}</dt><dd>${entry.text}</dd></div>`).join('')}</dl>` : '';
 
 function slideMarkup(slide, index) {
+  if (index) {
+    return `<article class="echoes-slide echoes-original-slide" data-slide-index="${index}" data-source="${escape(slide.source)}" hidden aria-labelledby="echoes-heading-${index}">
+      <h2 class="visually-hidden" id="echoes-heading-${index}">${escape(slide.title)}</h2>
+      <div class="echoes-slide-body"><img class="echoes-original-image" src="./assets/echoes/original-slides/${escape(slide.source)}" alt="${escape(slide.title)} — complete original historical slide" decoding="async"></div>
+    </article>`;
+  }
   const images = (slide.images || []).map(image => `<figure class="echoes-image"><img src="${escape(image.src)}" alt="${escape(image.alt)}" decoding="async">${image.caption ? `<figcaption>${escape(image.caption)}</figcaption>` : ''}</figure>`).join('');
   const profiles = slide.comparison?.length ? `<div class="echoes-comparison">${slide.comparison.map((profile,i) => `<section><h3>${escape(profile.label)}</h3>${(slide.images || [])[i] ? `<img class="echoes-record-image" src="${escape(slide.images[i].src)}" alt="${escape(slide.images[i].alt)}">` : ''}<p class="echoes-measure">${escape(profile.weight)}</p><p>${escape(profile.name)}</p><p>${escape(profile.location)}<br>${escape(profile.date)}</p>${profile.note ? `<p class="echoes-record-note">${escape(profile.note)}</p>` : ''}</section>`).join('')}</div>` : '';
   return `<article class="echoes-slide echoes-layout-${escape(slide.layout)}" data-slide-index="${index}" data-source="${escape(slide.source || 'opening')}" ${index ? 'hidden' : ''} aria-labelledby="echoes-heading-${index}">
@@ -51,6 +57,7 @@ export function mountEchoes(stage) {
   function update() {
     const index = controller.getIndex();
     stage.dataset.slideIndex = String(index);
+    stage.classList.toggle('is-original-slide', index > 0);
     position.textContent = `${index+1} / ${slides.length}`;
     position.setAttribute('aria-label',`Choose a screen, current ${index+1} of ${slides.length}`);
     previous.disabled = index === 0;

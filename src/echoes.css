@@ -97,3 +97,10 @@
 @keyframes echoes-reveal { from { opacity: .25; transform: translateY(3px); } to { opacity: 1; transform: none; } }
 @keyframes echoes-light { from { filter: brightness(.94); } to { filter: brightness(1.04); } }
 @media (prefers-reduced-motion: reduce) { .echoes-slide,.echoes-image img { animation: none !important; } }
+
+/* Locked historical canvases: contain the whole original, with no image effects. */
+.echoes-stage.content-space.is-original-slide { padding: 4px 8px 56px; background: #0b151b; }
+.echoes-stage.is-original-slide::before { display: none; }
+.echoes-original-slide { display: block; animation: none; }
+.echoes-original-slide .echoes-slide-body { display: block; height: 100%; min-width: 0; overflow: hidden; }
+.echoes-original-image { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; border: 0; mask: none; filter: none; transform: none; }
