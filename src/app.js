@@ -1,5 +1,6 @@
 import { ACTIVITIES, GLOBAL_ASSETS } from './activities.js';
 import { initializePresentation } from './presentation.js';
+import { mountEchoes } from './echoes.js?v=activity-1';
 
 const main = document.querySelector('#main-content');
 const navigationRegion = document.querySelector('#navigation-region');
@@ -12,6 +13,7 @@ let currentActivity = null;
 let isHome = true;
 let overlayScrollPosition = null;
 let presentationSnapshot = null;
+let activityController = null;
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -67,6 +69,7 @@ function keepCurrentDestinationVisible() {
 function updateNavigation() {
   const activityPresentation = Boolean(currentActivity) && presentation.isActive();
   document.body.classList.toggle('activity-presentation', activityPresentation);
+  activityController?.onPresentationChange(activityPresentation);
   if (activityPresentation) menuOpen = false;
   const permanent = isPermanentRail() && !activityPresentation;
   const overlay = menuOpen && !permanent;
@@ -208,6 +211,12 @@ function updateHomeComposition() {
 }
 
 function renderActivity(activity) {
+  if (activity.id === 'echoes-of-the-past') {
+    main.className = 'activity-main echoes-main';
+    main.innerHTML = '<header class="activity-page-heading"><h1 tabindex="-1">Echoes of the Past</h1></header><section class="activity-stage"></section>';
+    activityController = mountEchoes(main.querySelector('.activity-stage'));
+    return;
+  }
   main.className = 'activity-main';
   main.innerHTML = `
     <header class="activity-page-heading">
@@ -229,6 +238,8 @@ function renderRoute(initial = false) {
   // Browser history/direct route changes leave the old presentation before
   // replacing its activity. Entering or exiting presentation never changes URL.
   if (presentation.isActive()) presentation.leaveForRoute();
+  activityController?.destroy();
+  activityController = null;
   const hash = location.hash || '#/';
   const match = /^#\/activities\/([^/]+)$/.exec(hash);
   let activityId = null;
@@ -249,7 +260,9 @@ function renderRoute(initial = false) {
   document.title = isHome ? name : `${name} | The Haunted Realm`;
   announcement.textContent = `Opened ${name}`;
   window.scrollTo(0, 0);
-  if (!initial) main.querySelector('h1')?.focus({ preventScroll: true });
+  if (!initial || currentActivity?.id === 'echoes-of-the-past') {
+    (main.querySelector('.echoes-stage') || main.querySelector('h1'))?.focus({ preventScroll: true });
+  }
 }
 
 narrow.addEventListener('change', () => { menuOpen = false; updateNavigation(); });

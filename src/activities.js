@@ -14,7 +14,7 @@ export const ACTIVITIES = [
     ],
     "lettering": "work/activity-nine-refinement-v3/name-01-rest.png",
     "letteringFocus": "work/activity-nine-refinement-v3/name-01-focus.png",
-    "implementationState": "shell"
+    "implementationState": "implemented"
   },
   {
     "id": "the-cursed-quest",
